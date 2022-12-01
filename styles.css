@@ -1,17 +1,80 @@
 .header{
 height: 916px;
-width: 1440px;
+
 left: 0px;
 top: 1px;
 border-radius: [object Object]px;
-background: #FFFFFF;
+
+background-image: url('C:/Users/Justice/Downloads/Microverse-Student-Project-1/Headerbg@2x');
+
 }
 
 .Top-Nav{
-    height: 72px;
-width: 1440px;
+display: flex;
+justify-content:space-between;
+height: 72px;
+
 left: 0px;
 top: 0px;
 border-radius: 0px;
 
+}
+.logo{
+height: 40px;
+width: 100px;
+left: 143px;
+top: 16px;
+border-radius: 0px;
+padding: 10px 12px 10px 12px;
+
+}
+.Item-Nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-decoration: none;
+height: 40px;
+width: 259px;
+left: 1039px;
+top: 16px;
+border-radius: 0px;
+
+
+}
+a{
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    text-decoration: none;
+    
+}
+
+.content{
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    width: 400px;
+}
+p {
+    width: 400px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.social-media-icons{
+    
+    width: 400px;
+    display: flex;
+    justify-content:first baseline
+    
+}
+svg{
+    padding: 10px;
 }
