@@ -55,10 +55,13 @@ p {
   line-height: 28px;
 }
 
-.social-media-icons {
+ul {
   width: 400px;
   display: flex;
   justify-content: first baseline;
+}
+li {
+  list-style: none;
 }
 
 svg {
