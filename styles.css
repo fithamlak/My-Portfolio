@@ -4,10 +4,12 @@
   border-radius: 1px;
   background-image: url('C:/Users/Justice/Downloads/Microverse-Student-Project-1/Headerbg@2x');
 }
+
 header {
   display: flex;
-  justify-content:space-around
+  justify-content: space-around;
 }
+
 .logo {
   height: 40px;
   width: 100px;
@@ -16,19 +18,19 @@ header {
   padding: 10px 12px 10px 12px;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   height: 40px;
   width: 400px;
-  
 }
 
-.item{
+.item {
   padding: 10px;
 }
+
 a {
   flex-wrap: wrap;
   flex-shrink: 1;
@@ -60,6 +62,7 @@ ul {
   display: flex;
   justify-content: first baseline;
 }
+
 li {
   list-style: none;
 }
