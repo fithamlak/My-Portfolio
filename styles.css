@@ -4,25 +4,27 @@
   border-radius: 1px;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  height: 72px;
+  width: 100vw;
 }
 
 .main {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("./images/Header bg@2x.png");
-  width: 80%;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 h1 {
   width: 400px;
   font-weight: 700;
+  margin-top: 100px;
 }
 
 p {
