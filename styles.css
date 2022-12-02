@@ -4,85 +4,115 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
-  height: 100vh;
-}
-
-.all {
-  height: 916px;
-  top: 1px;
-  border-radius: 1px;
 }
 
 header {
-  height: 72px;
-  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+#toolbar {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
+  height: 48px;
+  justify-content: space-between;
 }
 
-.main {
+#logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
   display: flex;
-  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+#menu-bars-container {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar {
+  width: 20px;
+  height: 2px;
+  background-color: #6070ff;
+  margin: 6px 0;
+}
+
+#headline-container {
   box-sizing: border-box;
-  margin: 50px 0 0 0;
+  margin: 48px 0 0 0;
   padding: 114px 24px 0 24px;
   min-height: 626px;
   height: 100%;
   min-width: 375px;
   width: 100%;
-  justify-content: center;
-  background-image: url("./images/Header bg@2x.png");
+  background-image: url('images/background.png');
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0 0 0 90px;
-  background-size: 100% 100%;
-  margin-bottom: 100px;
 }
 
-.content-container {
+#headline {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  row-gap: 12px;
 }
 
-h1 {
-  text-align: left;
+.header {
+  margin: 0;
   padding: 0;
-  width: 90%;
+  width: 100%;
+  max-width: 355px;
   font-size: 40px;
   line-height: 52px;
-  max-width: 355px;
   font-weight: 700;
   color: #172b4d;
+  display: flex;
+  align-items: flex-end;
 }
 
-p {
-  text-align: left;
+.text {
   margin: 10px 0;
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  width: 90%;
+  width: 100%;
   max-width: 355px;
   overflow: auto;
   color: #344563;
 }
 
-ul {
-  margin-left: 100px;
-  width: 90px;
+#connect {
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-transform: uppercase;
+}
+
+#social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: first baseline;
+  justify-content: flex-start;
 }
 
-li {
-  list-style: none;
-}
-
-svg {
-  padding: 10px;
+.icon,
+.icon > a {
+  color: #505f79;
+  margin-right: 12px;
+  font-size: 24px;
 }
