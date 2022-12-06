@@ -327,16 +327,16 @@
   <footer>
     <h2>Contact me</h2>
     <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-    <form action="#" method="post" class="form-container">
+    <form action="https://formspree.io/f/mvoyerqw" method="post" class="form-container">
       <ul>
         <li>
-          <input type="text" name="user_name" placeholder="your name"/>
+          <input type="text" name="user_name" placeholder="your name" required maxlength="30"/>
         </li>
         <li>
-          <input type="emai" id="mail" name="email" placeholder="just@gmaiol.com"/>
+          <input type="email" id="mail" name="email" placeholder="just@gmaiol.com" required/>
         </li>
         <li>
-          <textarea id="msg" name="user_message" placeholder="Write your message here"></textarea>
+          <textarea id="msg" name="user_message" placeholder="Write your message here" required maxlength="500"></textarea>
         </li>
         <li class="button">
           <button type="submit" id="btn">Get In Touch</button>
