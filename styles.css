@@ -318,3 +318,10 @@ header {
   padding-right: 16px;
   object-fit: contain;
 }
+
+footer{
+  width: 375px;
+  height: 779px;
+}
+
+
