@@ -319,9 +319,70 @@ header {
   object-fit: contain;
 }
 
-footer{
+footer {
   width: 375px;
   height: 779px;
+  background-image: url(./images/backgroun_img.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer h2 {
+  margin-top: 105px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+footer p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 10px 24px;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer .form-container {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 310px;
+  Height: 48px;
+  padding-left: 15px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+form textarea {
+  width: 310px;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-top: 18px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 
