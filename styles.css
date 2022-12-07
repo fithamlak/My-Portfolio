@@ -11,7 +11,7 @@ header {
   top: 0;
   left: 0;
   height: 48px;
-  width: 100%;
+  width: 375px;
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
@@ -20,6 +20,7 @@ header {
   display: flex;
   height: 48px;
   justify-content: space-between;
+  width: 100%;
 }
 
 #logo {
@@ -53,7 +54,7 @@ header {
   height: 100%;
   min-width: 375px;
   width: 100%;
-  background-image: url('./images/BackgroundImage.png');
+  background-image: url('./images/BackgroundImage.svg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 0 90px;
@@ -122,23 +123,29 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   background: #fff;
-  border-radius: 16px;
   border: 1px solid #dfe1e6;
-  width: 327px;
+  width: 375px;
   height: 552px;
   padding: 16px;
   
 }
 
 .image-container{
-  width: 90%;
+  width: 375px;
+  height: auto;
   /* max-height: 200px;
   overflow-y: hidden; */
+}
+.image-container > img {
+  width: 100%;
+  height: auto;
+  margin: 0 2px 0 0;
 }
 .content-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .content-container > h2 {
@@ -192,7 +199,6 @@ header {
   padding: 4px 12px;
   margin-right: 8px;
   background: #ebebff;
-  border-radius: 8px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
