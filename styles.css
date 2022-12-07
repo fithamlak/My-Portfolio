@@ -127,20 +127,19 @@ header {
   width: 375px;
   height: 552px;
   padding: 16px;
-  
 }
 
-.image-container{
+.image-container {
   width: 375px;
   height: auto;
-  /* max-height: 200px;
-  overflow-y: hidden; */
 }
+
 .image-container > img {
   width: 100%;
   height: auto;
   margin: 0 2px 0 0;
 }
+
 .content-container {
   display: flex;
   flex-direction: column;
