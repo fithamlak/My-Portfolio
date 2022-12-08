@@ -323,7 +323,7 @@ header {
   mix-blend-mode: multiply;
   padding-right: 16px;
   object-fit: contain;
-}
+} 
 
 footer {
   width: 375px;
@@ -404,4 +404,4 @@ button {
   font-size: 17px;
   border-radius: 8px;
   border: none;
-}
+} 
