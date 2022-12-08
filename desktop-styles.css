@@ -1,0 +1,253 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f9;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100vw;
+  height: 72px;
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+#toolbar {
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#menu-bars-container {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hamberger {
+  display: none;
+}
+.menu-bars {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 259px;
+  height: 40px;
+}
+.menu-bar {
+  width: 87px;
+  height: 40px;
+  background-color: #6070ff;
+  margin: 6px 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-weight: 500;
+  font-size: 15px; 
+  color: #344563;
+}
+
+#headline-container {
+  width: 1350px;
+  height: 768px;
+  left: 0px;
+  top: 71px;
+  background-image: url('./images/Header\ bg@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 90px;
+}
+
+#headline {
+  list-style-type: none;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 920px;
+  height: 268px;
+  left: 260px;
+  top: calc(50% - 268px/2);
+}
+
+.header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  width: 64%;
+  min-width: 355px;
+  overflow: auto;
+  color: #344563;
+}
+
+#connect {
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-transform: uppercase;
+}
+
+#social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon,
+.icon > a {
+  color: #505f79;
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+.achomplishment-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  width: 1024px;
+  height: 400px;
+  padding-left: 200px;
+}
+
+.image-container {
+  width: 400px;
+  height: auto;
+}
+
+.image-container > img {
+  width: 100%;
+  height: auto;
+  margin: 0 2px 0 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.content-container > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0;
+  margin: 0;
+  color: #172b4d;
+}
+
+.content-container > .skill {
+  list-style-type: none;
+  padding: 6px 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.content-container > .skill > li {
+  line-height: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.skill > li:first-child {
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.content-container > p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.content-container > .technologies {
+  list-style-type: none;
+  padding: 3px 0;
+  margin: 0;
+  display: flex;
+}
+
+.content-container > .technologies > li {
+  padding: 4px 12px;
+  margin-right: 8px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+#button-container {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  background: #fff;
+  border-radius: 8px;
+  width: max-content;
+}
+
+.btn > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6070ff;
+  color: #fff;
+}
