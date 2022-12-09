@@ -38,13 +38,14 @@ header {
   display: flex;
   align-items: center;
 }
-#hamberger{
+
+#hamberger {
   width: 20px;
 }
-.menu-bars{
+
+.menu-bars {
   display: none;
 }
-
 
 #headline-container {
   box-sizing: border-box;
@@ -143,6 +144,7 @@ header {
 .desktop-view {
   display: none;
 }
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -326,7 +328,7 @@ header {
   mix-blend-mode: multiply;
   padding-right: 16px;
   object-fit: contain;
-} 
+}
 
 footer {
   width: 375px;
@@ -407,4 +409,4 @@ button {
   font-size: 17px;
   border-radius: 8px;
   border: none;
-} 
+}
