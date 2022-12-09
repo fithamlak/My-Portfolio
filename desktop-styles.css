@@ -133,6 +133,8 @@ header {
   text-transform: uppercase;
   animation: 2s 1 alternate slidein;
 }
+
+/* transition effect */
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -187,6 +189,7 @@ header {
 .mobile-view {
   display: none;
 }
+
 .desktop-view {
   margin: 24px;
   width: 100%;
