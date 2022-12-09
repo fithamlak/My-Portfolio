@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
+  min-width: 375;
 }
 
 header {
@@ -139,6 +140,9 @@ header {
   margin: 0 2px 0 0;
 }
 
+.desktop-view {
+  display: none;
+}
 .content-container {
   display: flex;
   flex-direction: column;

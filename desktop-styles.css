@@ -42,6 +42,7 @@ header {
 #hamberger {
   display: none;
 }
+
 .menu-bars {
   list-style: none;
   display: flex;
@@ -50,6 +51,7 @@ header {
   width: 259px;
   height: 40px;
 }
+
 .menu-bar {
   width: 87px;
   height: 40px;
@@ -64,7 +66,7 @@ header {
 }
 
 #headline-container {
-  width: 1350px;
+  width: 100%;
   height: 768px;
   left: 0px;
   top: 71px;
@@ -72,6 +74,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 0 90px;
+  margin-bottom: 142px;
 }
 
 #headline {
@@ -135,79 +138,102 @@ header {
   font-size: 24px;
 }
 
+#works-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .achomplishment-card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   background: #fff;
   border: 1px solid #dfe1e6;
-  width: 1024px;
-  height: 400px;
-  padding-left: 200px;
+  width: 80%;
+  height: 496px;
+  margin-bottom: 142px;
 }
 
-.image-container {
+/* .image-container {
   width: 400px;
   height: auto;
-}
+} */
 
-.image-container > img {
+
+/* .image-container > img {
   width: 100%;
   height: auto;
   margin: 0 2px 0 0;
+} */
+.mobile-view{
+  display: none;
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 20px;
+  margin: 24px;
 }
 
 .content-container > h2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  padding: 0;
-  margin: 0;
+  margin: 24px 24px 12px 24px ;
   color: #172b4d;
+  
 }
 
 .content-container > .skill {
   list-style-type: none;
-  padding: 6px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 24px 0 24px ;
+  margin-right: 24px;
   display: flex;
-  gap: 12px;
+  justify-content: flex-start;
+  width: 350px ;
+
+  
 }
 
 .content-container > .skill > li {
   line-height: 16px;
   font-weight: 600;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   color: #7a869a;
+  padding-right: 12px;
 }
 
 .skill > li:first-child {
-  line-height: 16px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   color: #344563;
 }
 
 .content-container > p {
-  margin: 0;
+  
   padding: 0;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  max-width: 400px;
+  margin: 24px;
+
 }
 
 .content-container > .technologies {
   list-style-type: none;
   padding: 3px 0;
-  margin: 0;
+  margin: 0 24px 56px 24px;
   display: flex;
 }
 
@@ -240,6 +266,7 @@ header {
   background: #fff;
   border-radius: 8px;
   width: max-content;
+  margin-left: 24px;
 }
 
 .btn > a {
@@ -251,3 +278,93 @@ header {
   background: #6070ff;
   color: #fff;
 }
+
+#about-container {
+  background: #fff;
+  border-radius: 0 90px 0 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 114px 24px 0 24px;
+  width: 100%;
+  min-width: 375px;
+  height: 100%;
+}
+
+#about {
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 12px;
+  margin-bottom: 0 0 100px 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+#categories-container {
+  box-sizing: border-box;
+  padding-bottom: 114px;
+  height: 100%;
+  width: 100%;
+}
+
+#categories {
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  row-gap: 12px;
+}
+
+#categories-item {
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  padding: 24px 12px;
+  box-sizing: border-box;
+  min-width: 327px;
+  width: 100%;
+  height: 100%;
+  min-height: 72px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#categories-item > .fa-solid {
+  color: #727e93;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #e3e5e9;
+}
+
+#item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail {
+  background: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: 303px;
+  width: 100%;
+  height: 66.72px;
+}
+
+.detail > img {
+  mix-blend-mode: multiply;
+  padding-right: 16px;
+  object-fit: contain;
+} 
