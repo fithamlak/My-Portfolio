@@ -4,13 +4,14 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
+  width: 100%;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 72px;
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
@@ -94,8 +95,20 @@ header {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
-  display: flex;
-  align-items: flex-end;
+  color: #091e42;
+  animation: 2s 1 alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .text {
@@ -108,6 +121,7 @@ header {
   min-width: 355px;
   overflow: auto;
   color: #344563;
+  animation: 2s 1 alternate slidein;
 }
 
 #connect {
@@ -117,6 +131,18 @@ header {
   line-height: 24px;
   color: #7f8cff;
   text-transform: uppercase;
+  animation: 2s 1 alternate slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 #social-icons {
@@ -125,6 +151,7 @@ header {
   margin: 0;
   display: flex;
   justify-content: flex-start;
+  animation: 2s 1 alternate slidein;
 }
 
 .icon,
@@ -147,18 +174,22 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background: #fff;
   border: 1px solid #dfe1e6;
-  width: 80%;
+  width: 90%;
   height: 496px;
   margin-bottom: 142px;
+  border-radius: 24px;
+  padding: 24px 0 24px 0;
 }
 
 .mobile-view {
   display: none;
 }
 .desktop-view {
-  margin-top: 24px;
+  margin: 24px;
+  width: 100%;
 }
 
 .content-container {
@@ -249,6 +280,7 @@ header {
   border-radius: 8px;
   width: max-content;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .btn > a {
@@ -259,6 +291,14 @@ header {
 .btn:hover {
   background: #6070ff;
   color: #fff;
+  transform: scale(1.2);
+}
+
+.btn:active {
+  background: #424daa;
+  color: #fff;
+  transform: scale(1.2);
+  transform: rotate(-5deg);
 }
 
 #about-container {

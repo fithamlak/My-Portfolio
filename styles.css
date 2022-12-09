@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
-  min-width: 375;
+  min-width: 375px;
 }
 
 header {
@@ -12,10 +12,10 @@ header {
   top: 0;
   left: 0;
   height: 48px;
-  width: 375px;
+  width: 100%;
+  min-width: 375px;
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
 }
 
 #toolbar {
@@ -48,6 +48,8 @@ header {
 }
 
 #headline-container {
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   margin: 48px 0 0 0;
   padding: 114px 24px 0 24px;
@@ -123,15 +125,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: calc(50% - 173px);
+  margin-top: 88px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  width: 375px;
+  border-radius: 16px;
+  width: 327px;
   height: 552px;
   padding: 16px;
 }
 
 .image-container {
-  width: 375px;
+  width: 327px;
   height: auto;
 }
 
@@ -252,13 +257,14 @@ header {
 }
 
 #about {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   row-gap: 12px;
   margin-bottom: 0 0 100px 0;
   list-style-type: none;
   padding: 0;
-  display: flex;
 }
 
 #categories-container {
