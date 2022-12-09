@@ -280,17 +280,19 @@ header {
 }
 
 #about-container {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
   background: #fff;
   border-radius: 0 90px 0 0;
   box-sizing: border-box;
   margin: 0;
-  padding: 114px 24px 0 24px;
+  
   width: 100%;
-  min-width: 375px;
-  height: 100%;
 }
 
 #about {
+  margin-left: 142px;
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 12px;
@@ -298,14 +300,19 @@ header {
   list-style-type: none;
   padding: 0;
   display: flex;
+  width: 350px;
 }
 
-#categories-container {
-  box-sizing: border-box;
-  padding-bottom: 114px;
-  height: 100%;
-  width: 100%;
+.about-container p{
+  margin-top: 10px;
 }
+
+.catagories-section {
+  list-style: none;
+  
+  margin-top: 20px;
+}
+
 
 #categories {
   flex-direction: column;
@@ -314,7 +321,16 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
+  
+  align-items: flex-start;
+}
+#item-details {
+  display: flex;
+  justify-content: flex-start;
   row-gap: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #categories-item {
@@ -325,11 +341,11 @@ header {
   padding: 24px 12px;
   box-sizing: border-box;
   min-width: 327px;
-  width: 100%;
-  height: 100%;
+  
   min-height: 72px;
   font-weight: 500;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 #categories-item > .fa-solid {
@@ -340,27 +356,18 @@ header {
   border-bottom: 1px solid #e3e5e9;
 }
 
-#item-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: 12px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .detail {
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
-  min-width: 303px;
-  width: 100%;
-  height: 66.72px;
+  height: 150px
 }
 
 .detail > img {
