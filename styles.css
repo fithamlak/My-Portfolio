@@ -339,7 +339,7 @@ header {
 footer {
   width: 375px;
   height: 779px;
-  background-image: url(./images/backgroun_img.svg);
+  background-image: url(./images/footer-background-for-mobile.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
