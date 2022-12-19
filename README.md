@@ -31,86 +31,128 @@ in attractive and evidence full way. this project is the part of my future full 
 ## 🛠 Built With <a name="built-with"></a>
   html, css specially with flex box concept
 ### Tech Stack <a name="tech-stack"></a>
+- HTML
+- CSS
 
-> I used mainly flex box concept to style my project
 
 
 ### Key Features <a name="key-features"></a>
 
--it contains my experience in development
--links to  demo of my projects
+- **Responsive pages**
+- **Contact form**
 
+### Getting Started <a name="getting-started"></a>
+```sh
+  cd my-folder
+  git clone git@github.com:fithamlak/portfolio.git
+```
+  
+### Prerequisites
+In order to run the tests for this project you need:
 
-
+Example command
+```sh
+ npm install
+```
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:fithamlak/portfolio.git
 ```
---->
+
+
+
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  npm install
-```
---->
+n/a
 
 ### Usage
 
-To run the project, execute the following command:
-
-
+Open index.html in your preferred browser.
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
+```sh
+  npm install
+```
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx hint .
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
+  
 ```sh
-
+  npx stylelint "**/*.{css,scss}"
 ```
- -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- AUTHORS -->
+- [Live Demo Link](https://fithamlak.github.io/)
+
+- [Loom walkthrough of the project](https://www.loom.com/share/fc0e5191009b44e9bd8299b642107569)
+
 
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
+
+
 
 👤 **Author1**
 
 - GitHub: [@fithamlak](https://github.com/fithamlak)
 - Twitter: [@FithamlakF](https://twitter.com/Fithamlak)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/fithamlak-fikrie-942169225)
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Please star this project if you like this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse and it's community of Micronauts for the opportunity to collobarate, help, support, and valuable feedback through code reviews and pair programming.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Can I re-use your code?**
+
+  - Sure, no problem!
+
+- **How can I see the project?**
+
+  - Just clone the repository as expained in the setup section, and open the index.html file in your preferred browser.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
