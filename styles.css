@@ -25,6 +25,7 @@ header {
   width: 100%;
   padding-top: 1rem;
 }
+
 .header-bg-color {
   background-color: #c6a595;
   height: 100px;
@@ -438,13 +439,14 @@ button {
   list-style: none;
   margin-top: 10px;
 }
+
 nav ul {
   display: block;
   list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-inline-start: 40px;
 }
 
