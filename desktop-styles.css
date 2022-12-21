@@ -24,7 +24,17 @@ header {
   width: 90%;
 }
 
-#logo {
+.menu-list a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #344563;
+  cursor: pointer;
+  padding-left: 12px;
+}
+
+.logo {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
@@ -39,21 +49,31 @@ header {
   justify-content: space-between;
 }
 
-#hamberger {
+.hamberger {
   display: none;
 }
 
-.menu-bars {
+.menu-list {
   list-style: none;
+  width: 500px;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 259px;
-  height: 40px;
-  text-decoration: none;
+  justify-content: space-evenly;
+  margin-right: 100px;
 }
 
-.menu-bar {
+.menu-list li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.close-button {
+  display: none;
+}
+
+/* .menu-bar {
   width: 87px;
   height: 40px;
   background-color: #6070ff;
@@ -64,9 +84,9 @@ header {
   font-weight: 500;
   font-size: 15px;
   color: #344563;
-}
+} */
 
-.mebu-bar a {
+.menu-bar a {
   text-decoration: none;
 }
 
