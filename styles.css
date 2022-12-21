@@ -26,24 +26,17 @@ header {
   padding-top: 1rem;
 }
 
-.header-bg-color {
-  background-color: #c6a595;
-  height: 100px;
-}
-
 .logo {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
   padding: 10px;
+  margin-bottom: 15px;
   text-decoration: none;
-}
-
-/* #menu-bars-container {
-  padding-right: 10px;
-  display: flex;
   align-items: center;
-} */
+  width: 20px;
+  margin-top: -15px;
+}
 
 .hamberger {
   width: 20px;
