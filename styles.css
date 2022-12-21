@@ -26,6 +26,11 @@ header {
   padding-top: 1rem;
 }
 
+.header-bg-color {
+  background-color: #6070ff;
+  height: 100px;
+}
+
 .logo {
   font-size: 18px;
   font-weight: 700;
@@ -423,11 +428,11 @@ button {
 
 .open_menu {
   position: absolute;
-  background-color: #c6a595;
+  background-color: #6070ff;
   top: 53px;
   right: 0;
   bottom: 0;
-  padding: 80px 24px 24px 24px;
+  padding: 40px 24px 24px 24px;
   min-width: 375px;
   height: 125vh;
   list-style: none;
@@ -449,23 +454,19 @@ nav ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: #344563;
+  color: #fff;
   cursor: pointer;
-  padding-left: 12px;
+  padding-left: 28px;
 }
 
 .menu-bar {
-  border-bottom: 1px solid #6f6c6b;
   margin-bottom: 24px;
   padding-bottom: 5px;
-  padding-left: 40px;
+  padding-left: 28px;
 }
 
 .close-button {
   position: absolute;
   right: 40px;
-  margin-bottom: 10px;
-  background-color: #c6a595;
-  width: 50px;
-  margin-top: -5px;
+  margin-top: 20px;
 }
