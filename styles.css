@@ -23,24 +23,29 @@ header {
   height: 48px;
   justify-content: space-between;
   width: 100%;
+  padding-top: 1rem;
 }
 
-#logo {
+.header-bg-color {
+  background-color: #6070ff;
+  height: 100px;
+}
+
+.logo {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
   padding: 10px;
+  margin-bottom: 15px;
   text-decoration: none;
-}
-
-#menu-bars-container {
-  padding-right: 10px;
-  display: flex;
   align-items: center;
+  width: 20px;
+  margin-top: -15px;
 }
 
-#hamberger {
+.hamberger {
   width: 20px;
+  margin-right: 5vw;
 }
 
 .menu-bars {
@@ -277,7 +282,7 @@ header {
 #categories {
   flex-direction: column;
   justify-content: flex-start;
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -415,4 +420,53 @@ button {
   font-size: 17px;
   border-radius: 8px;
   border: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.open_menu {
+  position: absolute;
+  background-color: #6070ff;
+  top: 53px;
+  right: 0;
+  bottom: 0;
+  padding: 40px 24px 24px 24px;
+  min-width: 375px;
+  height: 125vh;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+}
+
+.open_menu a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 28px;
+}
+
+.menu-bar {
+  margin-bottom: 24px;
+  padding-bottom: 5px;
+  padding-left: 28px;
+}
+
+.close-button {
+  position: absolute;
+  right: 40px;
+  margin-top: 20px;
 }

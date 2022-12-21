@@ -89,6 +89,9 @@ To run tests, run the following command:
 ```sh
   npx stylelint "**/*.{css,scss}"
 ```
+```sh
+  npx eslint .
+```
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
