@@ -32,7 +32,7 @@ const accomplishmentArray = [
   {
     id: 0,
     title: 'Tonic',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    skill: ['Canopy', 'Back End Dev', '2015'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/first-work.svg',
@@ -44,7 +44,7 @@ const accomplishmentArray = [
   {
     id: 1,
     title: 'Multi-Post Stories',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    skill: ['Canopy', 'Back End Dev', '2015'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/second-work.svg',
@@ -56,7 +56,7 @@ const accomplishmentArray = [
   {
     id: 2,
     title: 'Tonic',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    skill: ['Canopy', 'Back End Dev', '2015'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/third-work.svg',
@@ -68,7 +68,7 @@ const accomplishmentArray = [
   {
     id: 3,
     title: 'Multi-Post Stories',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    skill: ['Canopy', 'Back End Dev', '2015'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/fourth-work.svg',
@@ -78,3 +78,44 @@ const accomplishmentArray = [
     source: 'https://github.com/fithamlak/My-portfolio',
   },
 ];
+
+const accomplishmentHandler = () => {
+  const accomplishments = document.getElementById('works-container')
+  accomplishmentArray.forEach((accomplishment) => {
+    const accomplishmentCard = document.createElement('div');
+    accomplishmentCard.classList.add('achomplishment-card');
+    accomplishmentCard.innerHTML = `
+      <div class='image-container'>
+        <img  class='desktop-view'
+          src=${accomplishmentCard.ImageForDesktop}
+          alt=${accomplishmentCard.alt}
+        />
+        <img class='mobile-view'
+          src=${accomplishmentCard.ImageForMobile}
+        />
+      </div>
+      <div class='content-container'>
+        <h2>${accomplishmentCard.title}</h2>
+        <ul class='skill'>
+          <li>${accomplishmentCard.skill[0]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishmentCard.skill[1]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishmentCard.skill[2]}</li>
+        </ul>
+        <p>${accomplishmentCard.description}</p>  
+        <ul class='technologies'>
+          <li>${accomplishmentCard.technologies[0]}</li>
+          <li>${accomplishmentCard.technologies[1]}</li>
+          <li>${accomplishmentCard.technologies[2]}</li>
+        </ul>
+        <div id='button-container'>
+          <button type='button' class='btn'>
+          <a href='#'>See Project</a>
+         </button>
+       </div>
+      </div>
+    `;
+    accomplishments.appendChild(accomplishmentCard);
+  });
+};
