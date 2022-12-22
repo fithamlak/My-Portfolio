@@ -84,7 +84,8 @@ const accomplishmentHandler = () => {
   accomplishmentArray.forEach((accomplishment) => {
     const accomplishmentCard = document.createElement('div');
     accomplishmentCard.classList.add('achomplishment-card');
-    accomplishmentCard.innerHTML = `
+    if (((accomplishment.id % 2 === 0) && (window.matchMedia('screen and (min-width:768px) and (max-width:1440px)').matches)) || (window.matchMedia('screen and (min-width:320px) and (max-width:768px)').matches)) {
+      accomplishmentCard.innerHTML = `
       <div class='image-container'>
         <img  class='desktop-view'
           src=${accomplishment.ImageForDesktop}
@@ -115,7 +116,41 @@ const accomplishmentHandler = () => {
          </button>
        </div>
       </div>
+    `;} else {
+      accomplishmentCard.innerHTML = `
+      <div class='content-container'>
+        <h2>${accomplishment.title}</h2>
+        <ul class='skill'>
+          <li>${accomplishment.skill[0]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishment.skill[1]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishment.skill[2]}</li>
+        </ul>
+        <p>${accomplishment.description}</p>  
+        <ul class='technologies'>
+          <li>${accomplishment.technologies[0]}</li>
+          <li>${accomplishment.technologies[1]}</li>
+          <li>${accomplishment.technologies[2]}</li>
+        </ul>
+        <div id='button-container'>
+          <button type='button' class='btn'>
+          <a href='#'>See Project</a>
+         </button>
+       </div>
+      </div>
+      <div class='image-container'>
+        <img  class='desktop-view'
+          src=${accomplishment.ImageForDesktop}
+          alt=${accomplishment.alt}
+        />
+        <img class='mobile-view'
+          src=${accomplishment.ImageForMobile}
+        />
+      </div>
+      
     `;
+    }
     accomplishments.appendChild(accomplishmentCard);
   });
 };
