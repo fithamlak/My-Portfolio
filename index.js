@@ -80,34 +80,34 @@ const accomplishmentArray = [
 ];
 
 const accomplishmentHandler = () => {
-  const accomplishments = document.getElementById('works-container')
+  const accomplishments = document.getElementById('works-container');
   accomplishmentArray.forEach((accomplishment) => {
     const accomplishmentCard = document.createElement('div');
     accomplishmentCard.classList.add('achomplishment-card');
     accomplishmentCard.innerHTML = `
       <div class='image-container'>
         <img  class='desktop-view'
-          src=${accomplishmentCard.ImageForDesktop}
-          alt=${accomplishmentCard.alt}
+          src=${accomplishment.ImageForDesktop}
+          alt=${accomplishment.alt}
         />
         <img class='mobile-view'
-          src=${accomplishmentCard.ImageForMobile}
+          src=${accomplishment.ImageForMobile}
         />
       </div>
       <div class='content-container'>
-        <h2>${accomplishmentCard.title}</h2>
+        <h2>${accomplishment.title}</h2>
         <ul class='skill'>
-          <li>${accomplishmentCard.skill[0]}</li>
+          <li>${accomplishment.skill[0]}</li>
           <li>&#x2022;</li>
-          <li>${accomplishmentCard.skill[1]}</li>
+          <li>${accomplishment.skill[1]}</li>
           <li>&#x2022;</li>
-          <li>${accomplishmentCard.skill[2]}</li>
+          <li>${accomplishment.skill[2]}</li>
         </ul>
-        <p>${accomplishmentCard.description}</p>  
+        <p>${accomplishment.description}</p>  
         <ul class='technologies'>
-          <li>${accomplishmentCard.technologies[0]}</li>
-          <li>${accomplishmentCard.technologies[1]}</li>
-          <li>${accomplishmentCard.technologies[2]}</li>
+          <li>${accomplishment.technologies[0]}</li>
+          <li>${accomplishment.technologies[1]}</li>
+          <li>${accomplishment.technologies[2]}</li>
         </ul>
         <div id='button-container'>
           <button type='button' class='btn'>
@@ -118,4 +118,7 @@ const accomplishmentHandler = () => {
     `;
     accomplishments.appendChild(accomplishmentCard);
   });
+};
+window.onload = () => {
+  accomplishmentHandler();
 };
