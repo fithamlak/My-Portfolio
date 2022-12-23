@@ -42,3 +42,91 @@ form.addEventListener('submit', (event) => {
   const emailText = email.value;
   emailValidation(emailText, invalidEmail, event);
 });
+// preserve-data-in-the-browser
+
+// get form elements and distract
+const Form = document.getElementById('form');
+const {
+  name: nameInput,
+  email: emailInput,
+  message: messageInput,
+} = Form.elements;
+
+// check local storage available
+// - if available : create local storage object
+// - if not: null
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return (
+      e instanceof DOMException
+      // everything except Firefox
+      && (e.code === 22
+        // Firefox
+        || e.code === 1014
+        // test name field too, because code might not be present
+        // everything except Firefox
+        || e.name === 'QuotaExceededError'
+        // Firefox
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      // acknowledge QuotaExceededError only if there's something already stored
+      && storage
+      && storage.length !== 0
+    );
+  }
+}
+
+let availableStorage;
+
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+  availableStorage = window.localStorage;
+} else {
+  // Too bad, no localStorage for us
+  availableStorage = null;
+}
+// create a single object for the data
+const formDataObject = {};
+
+function storeData() {
+  formDataObject.name = nameInput.value;
+  formDataObject.email = emailInput.value;
+  formDataObject.message = messageInput.value;
+  const jsonData = JSON.stringify(formDataObject);
+  availableStorage.setItem('FormData', jsonData);
+}
+// listen to change on input fields
+nameInput.addEventListener('change', () => {
+  storeData();
+});
+
+emailInput.addEventListener('change', () => {
+  storeData();
+});
+
+messageInput.addEventListener('change', () => {
+  storeData();
+});
+// retrive the data by stringify and
+// set the object to local on loads of page
+function retrieveData() {
+  const contactData = availableStorage.getItem('FormData');
+  const parseContactData = JSON.parse(contactData);
+  if (contactData?.length > 0) {
+    const { name, email, message } = parseContactData;
+    nameInput.value = name || '';
+    emailInput.value = email || '';
+    messageInput.value = message || '';
+  }
+}
+
+window.onload = () => {
+  retrieveData();
+};
