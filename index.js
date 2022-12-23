@@ -114,3 +114,19 @@ emailInput.addEventListener('change', () => {
 messageInput.addEventListener('change', () => {
   storeData();
 });
+// retrive the data by stringify and
+// set the object to local on loads of page
+function retrieveData() {
+  const contactData = availableStorage.getItem('FormData');
+  const parseContactData = JSON.parse(contactData);
+  if (contactData?.length > 0) {
+    const { name, email, message } = parseContactData;
+    nameInput.value = name || '';
+    emailInput.value = email || '';
+    messageInput.value = message || '';
+  }
+}
+
+window.onload = () => {
+  retrieveData();
+};
