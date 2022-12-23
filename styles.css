@@ -267,7 +267,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   row-gap: 12px;
-  margin-bottom: 0 0 100px 0;
+  margin-bottom: 100px;
   list-style-type: none;
   padding: 0;
 }
