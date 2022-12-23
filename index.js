@@ -92,3 +92,25 @@ if (storageAvailable('localStorage')) {
   // Too bad, no localStorage for us
   availableStorage = null;
 }
+// create a single object for the data
+const formDataObject = {};
+
+function storeData() {
+  formDataObject.name = nameInput.value;
+  formDataObject.email = emailInput.value;
+  formDataObject.message = messageInput.value;
+  const jsonData = JSON.stringify(formDataObject);
+  availableStorage.setItem('FormData', jsonData);
+}
+// listen to change on input fields
+nameInput.addEventListener('change', () => {
+  storeData();
+});
+
+emailInput.addEventListener('change', () => {
+  storeData();
+});
+
+messageInput.addEventListener('change', () => {
+  storeData();
+});
