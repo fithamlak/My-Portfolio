@@ -470,3 +470,11 @@ nav ul {
   right: 40px;
   margin-top: 20px;
 }
+
+.validation-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: red;
+  font-size: 12px;
+}

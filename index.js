@@ -27,3 +27,18 @@ function closeNav() {
 hamburgerButton.addEventListener('click', openNav);
 closeButton.addEventListener('click', closeNav);
 navItems.addEventListener('click', closeNav);
+
+function emailValidation(email, error, event) {
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const errMessage = document.querySelector('.validation-message');
+    errMessage.innerText = error;
+  }
+}
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+  const invalidEmail = 'Error, please consider to write all lower case letters.';
+  const email = form.elements.mail;
+  const emailText = email.value;
+  emailValidation(emailText, invalidEmail, event);
+});

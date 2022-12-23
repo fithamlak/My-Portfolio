@@ -504,3 +504,11 @@ button {
   border-radius: 8px;
   border: none;
 }
+
+.validation-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: red;
+  font-size: 12px;
+}
