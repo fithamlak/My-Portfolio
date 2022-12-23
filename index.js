@@ -3,7 +3,11 @@ const hamburgerButton = document.querySelector('.hamberger');
 const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.menu-list');
 const myLogo = document.querySelector('.logo');
+const accomplishmentModel = document.getElementById('accomplishment-details-model');
 
+const preventDefaultHandler = (e) => {
+  e.preventDefault();
+};
 function openNav() {
   nav.classList.remove('toolbar');
   nav.classList.add('header-bg-color');
@@ -37,6 +41,7 @@ const accomplishmentArray = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/first-work.svg',
     ImageForDesktop: '/images/work1-desktop-view.svg',
+    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
     alt: 'work_tonic_daily_personalized_reads',
     live: 'https://fithamlak.github.io/',
     source: 'https://github.com/fithamlak/My-portfolio',
@@ -49,6 +54,7 @@ const accomplishmentArray = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/second-work.svg',
     ImageForDesktop: '/images/work2-desktop-view.svg',
+    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
     alt: 'work_multi-post_stories_daily_personalized_reads',
     live: 'https://fithamlak.github.io/',
     source: 'https://github.com/fithamlak/My-portfolio',
@@ -61,6 +67,7 @@ const accomplishmentArray = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/third-work.svg',
     ImageForDesktop: '/images/work3-desktop-view.svg',
+    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
     alt: 'work_tonic_daily_personalized_reads',
     live: 'https://fithamlak.github.io/',
     source: 'https://github.com/fithamlak/My-portfolio',
@@ -73,6 +80,7 @@ const accomplishmentArray = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: '/images/fourth-work.svg',
     ImageForDesktop: '/images/work4-desktop-view.svg',
+    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
     alt: 'work_multi-post_stories_daily_personalized_reads',
     live: 'https://fithamlak.github.io/',
     source: 'https://github.com/fithamlak/My-portfolio',
@@ -116,7 +124,7 @@ const accomplishmentHandler = () => {
          </button>
        </div>
       </div>
-    `;} else {
+    `; } else {
       accomplishmentCard.innerHTML = `
       <div class='content-container'>
         <h2>${accomplishment.title}</h2>
@@ -154,6 +162,85 @@ const accomplishmentHandler = () => {
     accomplishments.appendChild(accomplishmentCard);
   });
 };
+
+const closeAccomplishmentsModelHandler = () => {
+  // accomplishmentModel.classList.replace('d-flex', 'd-none');
+  // accomplishmentModel.innerHTML = '';
+  // document.body.classList.remove('stop-scrolling');
+  // document.body.removeEventListener('touchmove', preventDefaultHandler);
+};
+
+const accomplishmentcardClickHandler = (id) => {
+  accomplishmentModel.classList.add('accomplishment-detail');
+  document.body.classList.add('stop-scrolling');
+  document.body.addEventListener('touchmove', preventDefaultHandler);
+  const accomplishmentDetail = document.createElement('div');
+  accomplishmentDetail.classList.add('accomplishment-detail');
+  accomplishmentDetail.innerHTML = `
+    <div class='top-container'>
+      <div clas = 'titlle-and-skill'>
+        <h2>${accomplishmentArray[id].title}</h2     
+         <ul>
+          <li>${accomplishmentArray[id].skill[0]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishmentArray[id].skill[1]}</li>
+          <li>&#x2022;</li>
+          <li>${accomplishmentArray[id].skill[2]}</li>
+        </ul> 
+      </div>
+    <div class= 'close'>
+      <i class='fa-solid fa-x'></i>
+    </div> git 
+      <div>
+        <div class='image-container'>
+          <source srcset=${accomplishmentArray[id].accomplishmentDetailModel} media='(min-width: 768px)' />
+          <img
+            src=${accomplishmentArray[id].ImageForMobile}
+            alt=${accomplishmentArray[id].alt}
+          />
+        </div>
+      </div>
+      <div'>
+        <p>${accomplishmentArray[id].description}</p>
+      </div>
+      <div'>
+      <ul'>
+          <li>${accomplishmentArray[id].technologies[0]}</li>
+          <li>${accomplishmentArray[id].technologies[1]}</li>
+          <li>${accomplishmentArray[id].technologies[2]}</li>
+        </ul>
+        <ul'>
+          <li class='desktop'>${accomplishmentArray[id].technologies[3]}</li>
+          <li class="desktop">${accomplishmentArray[id].technologies[4]}</li>
+          <li class="desktop">${accomplishmentArray[id].technologies[5]}</li>
+        </ul>
+        <hr class='text-muted'>
+        <div>
+          <button type='button'>
+            <a href=${accomplishmentArray[id].live}>See live <i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+          </button>
+          <button type='button'>
+            <a href=${accomplishmentArray[id].source}>See source <i class='fa-brands fa-github'></i></a>
+          </button>
+        </div>
+      </div>    
+    </div>
+    <div class='fixed-bottom mb-2 d-flex justify-content-center p-2'>
+      <div id='black-bar'></div>
+    </div>`;
+  accomplishmentModel.appendChild(accomplishmentDetail);
+  const closeAcomplishmentModelBtn = document.getElementById('close-model-btn');
+  closeAcomplishmentModelBtn.addEventListener('click', closeAccomplishmentsModelHandler);
+};
+
+const accomplishmentsActivateLinkHandler = () => {
+  const accomplishmentCards = document.querySelectorAll('.achomplishment-card');
+  accomplishmentCards.forEach((card, index) => {
+    card.addEventListener('click', () => accomplishmentcardClickHandler(index));
+  });
+};
+
 window.onload = () => {
   accomplishmentHandler();
+  accomplishmentsActivateLinkHandler();
 };
