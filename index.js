@@ -3,11 +3,11 @@ const hamburgerButton = document.querySelector('.hamberger');
 const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.menu-list');
 const myLogo = document.querySelector('.logo');
-const accomplishmentModel = document.getElementById('accomplishment-details-model');
+const popWindow = document.querySelector('.popup_card');
 
-const preventDefaultHandler = (e) => {
-  e.preventDefault();
-};
+// const preventDefaultHandler = (e) => {
+//   e.preventDefault();
+// };
 function openNav() {
   nav.classList.remove('toolbar');
   nav.classList.add('header-bg-color');
@@ -88,11 +88,11 @@ const accomplishmentArray = [
 ];
 
 const accomplishmentHandler = () => {
-  const accomplishments = document.getElementById('works-container');
+  const accomplishments = document.getElementById('works');
   accomplishmentArray.forEach((accomplishment) => {
-    const accomplishmentCard = document.createElement('div');
+    const accomplishmentCard = document.createElement('li');
     accomplishmentCard.classList.add('achomplishment-card');
-    if (((accomplishment.id % 2 === 0) && (window.matchMedia('screen and (min-width:768px) and (max-width:1440px)').matches)) || (window.matchMedia('screen and (min-width:320px) and (max-width:768px)').matches)) {
+    // if (((accomplishment.id % 2 === 0) && (window.matchMedia('screen and (min-width:768px) and (max-width:1440px)').matches)) || (window.matchMedia('screen and (min-width:320px) and (max-width:768px)').matches)) {
       accomplishmentCard.innerHTML = `
       <div class='image-container'>
         <img  class='desktop-view'
@@ -119,128 +119,80 @@ const accomplishmentHandler = () => {
           <li>${accomplishment.technologies[2]}</li>
         </ul>
         <div id='button-container'>
-          <button type='button' class='btn'>
+          <button type='button' class='project_btn'>
           <a href='#'>See Project</a>
          </button>
        </div>
       </div>
-    `; } else {
-      accomplishmentCard.innerHTML = `
-      <div class='content-container'>
-        <h2>${accomplishment.title}</h2>
-        <ul class='skill'>
-          <li>${accomplishment.skill[0]}</li>
-          <li>&#x2022;</li>
-          <li>${accomplishment.skill[1]}</li>
-          <li>&#x2022;</li>
-          <li>${accomplishment.skill[2]}</li>
-        </ul>
-        <p>${accomplishment.description}</p>  
-        <ul class='technologies'>
-          <li>${accomplishment.technologies[0]}</li>
-          <li>${accomplishment.technologies[1]}</li>
-          <li>${accomplishment.technologies[2]}</li>
-        </ul>
-        <div id='button-container'>
-          <button type='button' class='btn'>
-          <a href='#'>See Project</a>
-         </button>
-       </div>
-      </div>
-      <div class='image-container'>
-        <img  class='desktop-view'
-          src=${accomplishment.ImageForDesktop}
-          alt=${accomplishment.alt}
-        />
-        <img class='mobile-view'
-          src=${accomplishment.ImageForMobile}
-        />
-      </div>
-      
     `;
-    }
+//     } else {
+//       accomplishmentCard.innerHTML = `
+//       <div class='content-container'>
+//         <h2>${accomplishment.title}</h2>
+//         <ul class='skill'>
+//           <li>${accomplishment.skill[0]}</li>
+//           <li>&#x2022;</li>
+//           <li>${accomplishment.skill[1]}</li>
+//           <li>&#x2022;</li>
+//           <li>${accomplishment.skill[2]}</li>
+//         </ul>
+//         <p>${accomplishment.description}</p>  
+//         <ul class='technologies'>
+//           <li>${accomplishment.technologies[0]}</li>
+//           <li>${accomplishment.technologies[1]}</li>
+//           <li>${accomplishment.technologies[2]}</li>
+//         </ul>
+//         <div id='button-container'>
+//           <button type='button' class='project_btn' >
+//           <a href='#'>See Project</a>
+//          </button>
+//        </div>
+//       </div>
+//       <div class='image-container'>
+//         <img  class='desktop-view'
+//           src=${accomplishment.ImageForDesktop}
+//           alt=${accomplishment.alt}
+//         />
+//         <img class='mobile-view'
+//           src=${accomplishment.ImageForMobile}
+//         />
+//       </div>
+      
+//     `;
+//     }
     accomplishments.appendChild(accomplishmentCard);
   });
 };
-
-const closeAccomplishmentsModelHandler = () => {
-  // accomplishmentModel.classList.replace('d-flex', 'd-none');
-  // accomplishmentModel.innerHTML = '';
-  // document.body.classList.remove('stop-scrolling');
-  // document.body.removeEventListener('touchmove', preventDefaultHandler);
-};
-
-const accomplishmentcardClickHandler = (id) => {
-  accomplishmentModel.classList.add('accomplishment-detail');
-  document.body.classList.add('stop-scrolling');
-  document.body.addEventListener('touchmove', preventDefaultHandler);
-  const accomplishmentDetail = document.createElement('div');
-  accomplishmentDetail.classList.add('accomplishment-detail');
-  accomplishmentDetail.innerHTML = `
-    <div class='top-container'>
-      <div clas = 'titlle-and-skill'>
-        <h2>${accomplishmentArray[id].title}</h2     
-         <ul>
-          <li>${accomplishmentArray[id].skill[0]}</li>
-          <li>&#x2022;</li>
-          <li>${accomplishmentArray[id].skill[1]}</li>
-          <li>&#x2022;</li>
-          <li>${accomplishmentArray[id].skill[2]}</li>
-        </ul> 
-      </div>
-    <div class= 'close'>
-      <i class='fa-solid fa-x'></i>
-    </div> git 
-      <div>
-        <div class='image-container'>
-          <source srcset=${accomplishmentArray[id].accomplishmentDetailModel} media='(min-width: 768px)' />
-          <img
-            src=${accomplishmentArray[id].ImageForMobile}
-            alt=${accomplishmentArray[id].alt}
-          />
-        </div>
-      </div>
-      <div'>
-        <p>${accomplishmentArray[id].description}</p>
-      </div>
-      <div'>
-      <ul'>
-          <li>${accomplishmentArray[id].technologies[0]}</li>
-          <li>${accomplishmentArray[id].technologies[1]}</li>
-          <li>${accomplishmentArray[id].technologies[2]}</li>
-        </ul>
-        <ul'>
-          <li class='desktop'>${accomplishmentArray[id].technologies[3]}</li>
-          <li class="desktop">${accomplishmentArray[id].technologies[4]}</li>
-          <li class="desktop">${accomplishmentArray[id].technologies[5]}</li>
-        </ul>
-        <hr class='text-muted'>
-        <div>
-          <button type='button'>
-            <a href=${accomplishmentArray[id].live}>See live <i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-          </button>
-          <button type='button'>
-            <a href=${accomplishmentArray[id].source}>See source <i class='fa-brands fa-github'></i></a>
-          </button>
-        </div>
-      </div>    
-    </div>
-    <div class='fixed-bottom mb-2 d-flex justify-content-center p-2'>
-      <div id='black-bar'></div>
-    </div>`;
-  accomplishmentModel.appendChild(accomplishmentDetail);
-  const closeAcomplishmentModelBtn = document.getElementById('close-model-btn');
-  closeAcomplishmentModelBtn.addEventListener('click', closeAccomplishmentsModelHandler);
-};
-
-const accomplishmentsActivateLinkHandler = () => {
-  const accomplishmentCards = document.querySelectorAll('.achomplishment-card');
-  accomplishmentCards.forEach((card, index) => {
-    card.addEventListener('click', () => accomplishmentcardClickHandler(index));
-  });
-};
-
 window.onload = () => {
   accomplishmentHandler();
-  accomplishmentsActivateLinkHandler();
 };
+
+function seeProject(k) {
+  const title = document.querySelector('.popup_title');
+  const techStach = document.querySelector('.tech_stack');
+  const popupDescription = document.querySelector('.popup_text');
+  const popupImage = document.querySelector('.popup_img');
+  const skillsStack = document.querySelector('.popup_skills');
+
+  title.innerText = accomplishmentArray[k].title;
+  for (let l = 0; accomplishmentArray[k].skill.length; l += 1) {
+    const skill = document.createElement('li');
+    skill.innerText = accomplishmentArray[k].skill[l];
+    skillsStack.append(skill);
+  }
+  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
+  popupDescription.innerText = accomplishmentArray[k].description;
+
+  for (let l = 0; accomplishmentArray[k].technologies.length; l += 1) {
+    const tech = document.createElement('li');
+    tech.innerText = accomplishmentArray[k].technologies[l];
+    techStach.append(tech);
+  }
+  popWindow.classList.toggle('invisible');
+}
+
+const projectButtons = document.querySelectorAll('.project_btn');
+console.log(projectButtons);
+for (let k = 0; k < projectButtons.length; k += 1) {
+  projectButtons[k].addEventListener('click', () => seeProject(k));
+}

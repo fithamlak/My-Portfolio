@@ -471,8 +471,7 @@ nav ul {
   margin-top: 20px;
 }
 
-#accomplishment-detail-model {
-  /* display: none;
+/* #accomplishment-model {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -483,25 +482,28 @@ nav ul {
   height: 100%;
   z-index: 9999;
   background: #c1c7d0;
-  overflow: auto; */
+  overflow: auto;
 }
 
-/* #accomplishment-detail-model > .accomplishment-card {
+#accomplishment-model > .work-card {
   overflow: auto;
-} */
+}
 
-/* @media screen and (min-width: 768px) {
-  #accomplishment-detail-model  > .accomplishment-detail-model {
+@media screen and (min-width: 768px) {
+  #accomplishment-model > .work-card {
     max-width: 60vw;
   }
-} */
+}
 
-#close-model-btn > i {
+#close-modal-btn > i {
   color: #67798e;
   font-size: 1.2rem;
+} */
+.center {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
