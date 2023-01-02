@@ -1,9 +1,11 @@
+// Variables for dom elements
 const nav = document.querySelector('#toolbar');
 const hamburgerButton = document.querySelector('.hamberger');
 const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.menu-list');
 const myLogo = document.querySelector('.logo');
 
+// function to open mobile menu when humbergerButton clicked
 function openNav() {
   nav.classList.remove('toolbar');
   nav.classList.add('header-bg-color');
