@@ -4,6 +4,7 @@ const closeButton = document.querySelector('.close-button');
 const navItems = document.querySelector('.menu-list');
 const myLogo = document.querySelector('.logo');
 const popWindow = document.querySelector('.popup_card');
+const pButton = document.querySelector('.project_btn');
 
 // const preventDefaultHandler = (e) => {
 //   e.preventDefault();
@@ -86,14 +87,37 @@ const accomplishmentArray = [
     source: 'https://github.com/fithamlak/My-portfolio',
   },
 ];
+function seeProject(k) {
+  const title = document.querySelector('.popup_title');
+  const techStach = document.querySelector('.tech_stack');
+  const popupDescription = document.querySelector('.popup_text');
+  const popupImage = document.querySelector('.popup_img');
+  const skillsStack = document.querySelector('.popup_skills');
 
+  title.innerText = accomplishmentArray[k].title;
+  for (let l = 0; accomplishmentArray[k].skill.length; l += 1) {
+    const skill = document.createElement('li');
+    skill.innerText = accomplishmentArray[k].skill[l];
+    skillsStack.append(skill);
+  }
+  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
+  popupDescription.innerText = accomplishmentArray[k].description;
+
+  for (let l = 0; accomplishmentArray[k].technologies.length; l += 1) {
+    const tech = document.createElement('li');
+    tech.innerText = accomplishmentArray[k].technologies[l];
+    techStach.append(tech);
+  }
+  popWindow.classList.toggle('invisible');
+
+  console.log('listened');
+}
 const accomplishmentHandler = () => {
   const accomplishments = document.getElementById('works');
-  accomplishmentArray.forEach((accomplishment) => {
+  accomplishmentArray.forEach((accomplishment, index) => {
     const accomplishmentCard = document.createElement('li');
     accomplishmentCard.classList.add('achomplishment-card');
-    // if (((accomplishment.id % 2 === 0) && (window.matchMedia('screen and (min-width:768px) and (max-width:1440px)').matches)) || (window.matchMedia('screen and (min-width:320px) and (max-width:768px)').matches)) {
-      accomplishmentCard.innerHTML = `
+    accomplishmentCard.innerHTML = `
       <div class='image-container'>
         <img  class='desktop-view'
           src=${accomplishment.ImageForDesktop}
@@ -119,47 +143,18 @@ const accomplishmentHandler = () => {
           <li>${accomplishment.technologies[2]}</li>
         </ul>
         <div id='button-container'>
-          <button type='button' class='project_btn'>
-          <a href='#'>See Project</a>
+          <button class='project_btn'>
+          See Project
          </button>
        </div>
-      </div>
-    `;
-//     } else {
-//       accomplishmentCard.innerHTML = `
-//       <div class='content-container'>
-//         <h2>${accomplishment.title}</h2>
-//         <ul class='skill'>
-//           <li>${accomplishment.skill[0]}</li>
-//           <li>&#x2022;</li>
-//           <li>${accomplishment.skill[1]}</li>
-//           <li>&#x2022;</li>
-//           <li>${accomplishment.skill[2]}</li>
-//         </ul>
-//         <p>${accomplishment.description}</p>  
-//         <ul class='technologies'>
-//           <li>${accomplishment.technologies[0]}</li>
-//           <li>${accomplishment.technologies[1]}</li>
-//           <li>${accomplishment.technologies[2]}</li>
-//         </ul>
-//         <div id='button-container'>
-//           <button type='button' class='project_btn' >
-//           <a href='#'>See Project</a>
-//          </button>
-//        </div>
-//       </div>
-//       <div class='image-container'>
-//         <img  class='desktop-view'
-//           src=${accomplishment.ImageForDesktop}
-//           alt=${accomplishment.alt}
-//         />
-//         <img class='mobile-view'
-//           src=${accomplishment.ImageForMobile}
-//         />
-//       </div>
+      </div>`;
+      const pButton = accomplishmentCard.querySelector('.project_btn');
+       pButton.addEventListener('click', () =>  {
+        seeProject(index);
+        console.log('button');
+        console.log(index);
+      });
       
-//     `;
-//     }
     accomplishments.appendChild(accomplishmentCard);
   });
 };
@@ -167,32 +162,10 @@ window.onload = () => {
   accomplishmentHandler();
 };
 
-function seeProject(k) {
-  const title = document.querySelector('.popup_title');
-  const techStach = document.querySelector('.tech_stack');
-  const popupDescription = document.querySelector('.popup_text');
-  const popupImage = document.querySelector('.popup_img');
-  const skillsStack = document.querySelector('.popup_skills');
 
-  title.innerText = accomplishmentArray[k].title;
-  for (let l = 0; accomplishmentArray[k].skill.length; l += 1) {
-    const skill = document.createElement('li');
-    skill.innerText = accomplishmentArray[k].skill[l];
-    skillsStack.append(skill);
-  }
-  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
-  popupDescription.innerText = accomplishmentArray[k].description;
 
-  for (let l = 0; accomplishmentArray[k].technologies.length; l += 1) {
-    const tech = document.createElement('li');
-    tech.innerText = accomplishmentArray[k].technologies[l];
-    techStach.append(tech);
-  }
-  popWindow.classList.toggle('invisible');
-}
-
-const projectButtons = document.querySelectorAll('.project_btn');
-console.log(projectButtons);
-for (let k = 0; k < projectButtons.length; k += 1) {
-  projectButtons[k].addEventListener('click', () => seeProject(k));
-}
+// const projectButtons = document.querySelectorAll('.project_btn');
+// console.log(pButton);
+// for (let k = 0; k < projectButtons.length; k += 1) {
+//   projectButtons[k].addEventListener('click', () => seeProject(k));
+// }
