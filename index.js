@@ -1,122 +1,102 @@
-const nav = document.querySelector('#toolbar');
-const hamburgerButton = document.querySelector('.hamberger');
-const closeButton = document.querySelector('.close-button');
-const navItems = document.querySelector('.menu-list');
-const myLogo = document.querySelector('.logo');
-const popWindow = document.querySelector('.popup_card');
-const pButton = document.querySelector('.project_btn');
+const nav = document.querySelector("#toolbar");
+const hamburgerButton = document.querySelector(".hamberger");
+const closeButton = document.querySelector(".close-button");
+const navItems = document.querySelector(".menu-list");
+const myLogo = document.querySelector(".logo");
+const popWindow = document.querySelector(".popup_card");
+const pButton = document.querySelector(".project_btn");
+const bod = document.querySelector(".main");
 
 // const preventDefaultHandler = (e) => {
 //   e.preventDefault();
 // };
 function openNav() {
-  nav.classList.remove('toolbar');
-  nav.classList.add('header-bg-color');
-  hamburgerButton.classList.toggle('invisible');
-  myLogo.classList.toggle('invisible');
-  closeButton.classList.toggle('invisible');
-  navItems.classList.toggle('invisible');
-  navItems.classList.toggle('open_menu');
+  nav.classList.remove("toolbar");
+  nav.classList.add("header-bg-color");
+  hamburgerButton.classList.toggle("invisible");
+  myLogo.classList.toggle("invisible");
+  closeButton.classList.toggle("invisible");
+  navItems.classList.toggle("invisible");
+  navItems.classList.toggle("open_menu");
 }
 
 function closeNav() {
-  nav.classList.remove('header-bg-color');
-  nav.classList.add('toolbar');
-  hamburgerButton.classList.toggle('invisible');
-  myLogo.classList.toggle('invisible');
-  closeButton.classList.toggle('invisible');
-  navItems.classList.toggle('invisible');
-  navItems.classList.toggle('open_menu');
+  nav.classList.remove("header-bg-color");
+  nav.classList.add("toolbar");
+  hamburgerButton.classList.toggle("invisible");
+  myLogo.classList.toggle("invisible");
+  closeButton.classList.toggle("invisible");
+  navItems.classList.toggle("invisible");
+  navItems.classList.toggle("open_menu");
 }
 
-hamburgerButton.addEventListener('click', openNav);
-closeButton.addEventListener('click', closeNav);
-navItems.addEventListener('click', closeNav);
+hamburgerButton.addEventListener("click", openNav);
+closeButton.addEventListener("click", closeNav);
+navItems.addEventListener("click", closeNav);
 
 const accomplishmentArray = [
   {
     id: 0,
-    title: 'Tonic',
-    skill: ['Canopy', 'Back End Dev', '2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: '/images/first-work.svg',
-    ImageForDesktop: '/images/work1-desktop-view.svg',
-    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
-    alt: 'work_tonic_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    title: "Tonic",
+    skill: ["Canopy", "Back End Dev", "2015"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ["html", "css", "javascript", "github", "ruby", "Bootstraps"],
+    ImageForMobile: "/images/first-work.svg",
+    ImageForDesktop: "/images/work1-desktop-view.svg",
+    accomplishmentDetailModel: "/images/accomplishment-details-model.svg",
+    alt: "work_tonic_daily_personalized_reads",
+    live: "https://fithamlak.github.io/",
+    source: "https://github.com/fithamlak/My-portfolio",
   },
   {
     id: 1,
-    title: 'Multi-Post Stories',
-    skill: ['Canopy', 'Back End Dev', '2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: '/images/second-work.svg',
-    ImageForDesktop: '/images/work2-desktop-view.svg',
-    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
-    alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    title: "Multi-Post Stories",
+    skill: ["Canopy", "Back End Dev", "2015"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ["html", "css", "javascript", "github", "ruby", "Bootstraps"],
+    ImageForMobile: "/images/second-work.svg",
+    ImageForDesktop: "/images/work2-desktop-view.svg",
+    accomplishmentDetailModel: "/images/accomplishment-details-model.svg",
+    alt: "work_multi-post_stories_daily_personalized_reads",
+    live: "https://fithamlak.github.io/",
+    source: "https://github.com/fithamlak/My-portfolio",
   },
   {
     id: 2,
-    title: 'Tonic',
-    skill: ['Canopy', 'Back End Dev', '2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: '/images/third-work.svg',
-    ImageForDesktop: '/images/work3-desktop-view.svg',
-    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
-    alt: 'work_tonic_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    title: "Tonic",
+    skill: ["Canopy", "Back End Dev", "2015"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ["html", "css", "javascript", "github", "ruby", "Bootstraps"],
+    ImageForMobile: "/images/third-work.svg",
+    ImageForDesktop: "/images/work3-desktop-view.svg",
+    accomplishmentDetailModel: "/images/accomplishment-details-model.svg",
+    alt: "work_tonic_daily_personalized_reads",
+    live: "https://fithamlak.github.io/",
+    source: "https://github.com/fithamlak/My-portfolio",
   },
   {
     id: 3,
-    title: 'Multi-Post Stories',
-    skill: ['Canopy', 'Back End Dev', '2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: '/images/fourth-work.svg',
-    ImageForDesktop: '/images/work4-desktop-view.svg',
-    accomplishmentDetailModel: '/images/accomplishment-details-model.svg',
-    alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    title: "Multi-Post Stories",
+    skill: ["Canopy", "Back End Dev", "2015"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ["html", "css", "javascript", "github", "ruby", "Bootstraps"],
+    ImageForMobile: "/images/fourth-work.svg",
+    ImageForDesktop: "/images/work4-desktop-view.svg",
+    accomplishmentDetailModel: "/images/accomplishment-details-model.svg",
+    alt: "work_multi-post_stories_daily_personalized_reads",
+    live: "https://fithamlak.github.io/",
+    source: "https://github.com/fithamlak/My-portfolio",
   },
 ];
-function seeProject(k) {
-  const title = document.querySelector('.popup_title');
-  const techStach = document.querySelector('.tech_stack');
-  const popupDescription = document.querySelector('.popup_text');
-  const popupImage = document.querySelector('.popup_img');
-  const skillsStack = document.querySelector('.popup_skills');
-
-  title.innerText = accomplishmentArray[k].title;
-  for (let l = 0; l <= accomplishmentArray[k].skill.length; l += 1) {
-    const skill = document.createElement('li');
-    skill.innerText = accomplishmentArray[k].skill[l];
-    skillsStack.append(skill);
-  }
-  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
-  popupDescription.innerText = accomplishmentArray[k].description;
-
-  for (let l = 0; l <= accomplishmentArray[k].technologies.length; l += 1) {
-    const tech = document.createElement('li');
-    tech.innerText = accomplishmentArray[k].technologies[l];
-    techStach.append(tech);
-  }
-  popWindow.classList.toggle('invisible');
-
-  console.log('listened');
-}
 const accomplishmentHandler = () => {
-  const accomplishments = document.getElementById('works');
+  const accomplishments = document.getElementById("works");
   accomplishmentArray.forEach((accomplishment, index) => {
-    const accomplishmentCard = document.createElement('li');
-    accomplishmentCard.classList.add('achomplishment-card');
+    const accomplishmentCard = document.createElement("li");
+    accomplishmentCard.classList.add("achomplishment-card");
     accomplishmentCard.innerHTML = `
       <div class='image-container'>
         <img  class='desktop-view'
@@ -148,11 +128,11 @@ const accomplishmentHandler = () => {
          </button>
        </div>
       </div>`;
-      const pButton = accomplishmentCard.querySelector('.project_btn');
-       pButton.addEventListener('click', () =>  {
-        seeProject(index);
-      });
-      
+    const pButton = accomplishmentCard.querySelector(".project_btn");
+    pButton.addEventListener("click", () => {
+      seeProject(index);
+    });
+
     accomplishments.appendChild(accomplishmentCard);
   });
 };
@@ -160,7 +140,43 @@ window.onload = () => {
   accomplishmentHandler();
 };
 
+function seeProject(k) {
+  console.log("am clicked");
+  const title = document.querySelector(".popup_title");
+  const techStach = document.querySelector(".tech_stack");
+  const popupDescription = document.querySelector(".popup_text");
+  const popupImage = document.querySelector(".popup_img");
+  const skillsStack = document.querySelector(".popup_skills");
 
+  title.innerText = accomplishmentArray[k].title;
+  for (let l = 0; l < accomplishmentArray[k].skill.length; l += 1) {
+    const skill = document.createElement("li");
+    skill.innerText = accomplishmentArray[k].skill[l];
+    skillsStack.append(skill);
+  }
+  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
+  popupDescription.innerText = accomplishmentArray[k].description;
+
+  for (let l = 0; l < accomplishmentArray[k].technologies.length; l += 1) {
+    const tech = document.createElement("li");
+    tech.innerText = accomplishmentArray[k].technologies[l];
+    techStach.append(tech);
+  }
+  popWindow.classList.toggle("invisible");
+  //main.style.backgroundColor = "#C1C7D0;";
+}
+
+function closeProject() {
+  const techStack = document.querySelector(".tech_stack");
+  const main = document.querySelector(".main");
+  popupWindow.classList.toggle("invisible");
+  techStack.innerHTML = "";
+  nav.classList.toggle("blur");
+  bod.classList.add(".hide");
+}
+
+// const xProject = document.querySelector(".close_icon");
+// xProject.addEventListener("click", closeProject);
 
 // const projectButtons = document.querySelectorAll('.project_btn');
 // console.log(pButton);
