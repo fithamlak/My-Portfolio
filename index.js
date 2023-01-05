@@ -95,7 +95,7 @@ function seeProject(k) {
   const skillsStack = document.querySelector('.popup_skills');
 
   title.innerText = accomplishmentArray[k].title;
-  for (let l = 0; accomplishmentArray[k].skill.length; l += 1) {
+  for (let l = 0; l <= accomplishmentArray[k].skill.length; l += 1) {
     const skill = document.createElement('li');
     skill.innerText = accomplishmentArray[k].skill[l];
     skillsStack.append(skill);
@@ -103,7 +103,7 @@ function seeProject(k) {
   popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
   popupDescription.innerText = accomplishmentArray[k].description;
 
-  for (let l = 0; accomplishmentArray[k].technologies.length; l += 1) {
+  for (let l = 0; l <= accomplishmentArray[k].technologies.length; l += 1) {
     const tech = document.createElement('li');
     tech.innerText = accomplishmentArray[k].technologies[l];
     techStach.append(tech);
@@ -151,8 +151,6 @@ const accomplishmentHandler = () => {
       const pButton = accomplishmentCard.querySelector('.project_btn');
        pButton.addEventListener('click', () =>  {
         seeProject(index);
-        console.log('button');
-        console.log(index);
       });
       
     accomplishments.appendChild(accomplishmentCard);
