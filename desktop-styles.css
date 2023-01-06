@@ -22,12 +22,10 @@ header {
   height: 47px;
   justify-content: space-between;
   width: 90%;
-  /* z-index: 102; */
-  /* background-color: red; */
 }
 
 .menu-list a {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -146,20 +144,6 @@ header {
   animation: 2s 1 alternate slidein;
 }
 
-transition effect {
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-}
-
 #social-icons {
   list-style-type: none;
   padding: 0;
@@ -231,6 +215,26 @@ transition effect {
   display: flex;
   justify-content: flex-start;
   width: 350px;
+}
+
+.tech_stack li {
+  list-style: none;
+  padding: 4px 12px;
+  margin-right: 8px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.popup_skills li {
+  font-weight: 600;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7a869a;
 }
 
 .content-container > .skill > li {
@@ -310,6 +314,7 @@ transition effect {
   color: #fff;
   transform: scale(1.2);
 }
+
 .achomplishment-card:hover {
   filter: drop-shadow(0 48px 48px rgba (37, 47, 137, 0.08));
   border: 1px solid #6070ff;
@@ -405,7 +410,6 @@ transition effect {
   height: 115px;
   color: #253858;
   width: 100px;
-  /* margin-left: -20px; */
 }
 
 .detail > img {
@@ -540,9 +544,9 @@ button {
   margin-bottom: 5px;
   margin-top: 24px;
 }
+
 .popup_card h4 ::after {
   content: "x";
-
   position: absolute;
   right: -20px;
 }
@@ -558,7 +562,6 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  /* background-color: red; */
 }
 
 .popup_card p {
@@ -569,7 +572,6 @@ button {
   line-height: 22px;
   color: #344563;
   width: 60%;
-  /* position: absolute; */
   right: 10px;
   bottom: 235px;
   height: auto;
@@ -583,33 +585,19 @@ button {
   height: 60px;
   row-gap: 10px;
 }
+
 .grid-item {
   padding: 5px;
   font-size: 15px;
   text-align: center;
   margin-right: 20px;
   font-weight: 500;
-  font-size: 15px;
   font-family: "Poppins", sans-serif;
-}
-
-.tech_stack li {
-  list-style: none;
-  padding: 4px 12px;
-  margin-right: 8px;
-  background: #ebebff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
 }
 
 .popup_img {
   margin-top: 36px;
   margin-bottom: 50px;
-  /* margin-left: 20px; */
-
   align-self: flex-start;
   background-color: #fff;
 }
@@ -629,13 +617,12 @@ button {
 .hide {
   display: none;
 }
+
 .popup_skills {
-  /* list-style-type: none; */
   display: flex;
   padding: 0;
   margin: 0 24px 0 10px;
   margin-right: 24px;
-  display: flex;
   justify-content: space-between;
   width: 300px;
 }
@@ -643,14 +630,6 @@ button {
 .popup_skills :first-child {
   padding-left: 0;
   list-style: none;
-}
-.popup_skills li {
-  font-weight: 600;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #7a869a;
-  /* padding-right: 12px; */
 }
 
 .horizontal {
@@ -673,16 +652,6 @@ button {
   width: 400px;
   height: 60px;
 }
-.grid-item {
-  padding: 5px;
-  font-size: 15px;
-  text-align: center;
-  margin-right: 20px;
-  font-weight: 500;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  color: #3c3a39;
-}
 
 .butt a {
   text-decoration: none;
@@ -698,8 +667,4 @@ button {
 
 .butt a :hover {
   background-color: #396df2;
-}
-
-.hide {
-  display: none;
 }
