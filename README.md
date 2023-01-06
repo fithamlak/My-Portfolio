@@ -40,6 +40,8 @@ in attractive and evidence full way. this project is the part of my future full 
 
 - **Responsive pages**
 - **Contact form**
+- **Mobile menu pop up**
+- **Data preservation in the browser**
 
 ### Getting Started <a name="getting-started"></a>
 ```sh
