@@ -168,7 +168,12 @@ function seeProject(k) {
     skill.innerText = accomplishmentArray[k].skill[l];
     skillsStack.append(skill);
   }
-  popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
+  let deviceSize = screen.width;
+  if (deviceSize < 769) {
+    popupImage.src = accomplishmentArray[k].ImageForMobile;
+  } else {
+    popupImage.src = accomplishmentArray[k].accomplishmentDetailModel;
+  }
   popupDescription.innerText = accomplishmentArray[k].description;
 
   for (let l = 0; l < accomplishmentArray[k].technologies.length; l += 1) {
