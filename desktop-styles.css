@@ -146,7 +146,7 @@ header {
   line-height: 24px;
   width: 64%;
   min-width: 355px;
-  overflow: auto;
+  /* overflow: auto; */
   color: #344563;
   animation: 2s 1 alternate slidein;
 }
@@ -324,12 +324,7 @@ header {
   transform: scale(1.2);
 }
 
-/* .btn:active {
-  background: #424daa;
-  color: #fff;
-  transform: scale(1.2);
-  transform: rotate(-5deg);
-} */
+
 
 .achomplishment-card:hover {
   filter: drop-shadow(0 48px 48px rgba (37, 47, 137, 0.08));
@@ -525,17 +520,23 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 1400px;
-  width: 80%;
+  width: 55%;
   max-width: 1156px;
-  /* background-color: red; */
+  margin-top: 100px; 
+  margin-left: 100px;
+  background-color: #fff;
   border: solid 1px #dfe1e6;
   padding: 24px 24px 27px 24px;
   place-self: center;
-  position: relative;
-  z-index: 99;
-  mix-blend-mode: multiply;
-  height: 100%;
+  position: fixed;
+  z-index: 500;
+  border-radius: 2rem;
+  /* mix-blend-mode: multiply; */
+  overflow-x:hidden;
+  height: 50%;
+  max-height: 800px;
+  overflow-y: auto;
+  
 }
 
 .invisible {
@@ -552,11 +553,11 @@ button {
   margin-bottom: 5px;
   margin-top: 24px;
 }
-.close-btnn {
+.popup_card h4 ::after{
   content: "x";
-
+  
   position: absolute;
-  right: +20px;
+  right: -20px;
 }
 
 .close_icon {
@@ -573,112 +574,69 @@ button {
 
 .popup_card p {
   font-family: "Inter", sans-serif;
-  /* font-style: normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #344563;
   width: 424px;
-  position: absolute;
+  /* position: absolute; */
   right: 10px;
   bottom: 235px;
-  height: auto; */
+  height: auto; 
 }
 
 .tech_stack {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 24px 0 24px;
-  margin-right: 24px;
-  display: flex;
-  justify-content: flex-start;
-  /* width: 350px; */
-  position: absolute;
-  right: 10px;
-  bottom: 235px;
-  height: auto;
-}
-
-.tech_stack li {
-  list-style: none;
-  margin-top: 4px;
-  margin-right: 20px;
-  padding: 6px 12px;
-  border: solid 1px black;
-  font-weight: 500;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  color: #3c3a39;
-}
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+  }
+  .grid-item {
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+ .tech_stack li {
+    list-style: none;
+    padding: 4px 12px;
+    margin-right: 8px;
+    background: #ebebff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+} 
 
 .popup_img {
-  height: 448px;
-  margin-top: 40px;
+  height: 380px;
+  /* width: 100%; */
+  margin-top: 36px;
+  /* margin-left: 20px; */
+
   align-self: flex-start;
-}
-
-.popup_card .btn {
-  padding: 12px;
-  height: 48px;
-  background: #ff6b00;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.7rem;
-  border: none;
-  position: absolute;
-  bottom: 26px;
-  cursor: pointer;
-  transition: all 0.6s ease-out;
-  text-align: left;
-}
-
-.live_btn {
-  right: 3px;
-  position: relative;
-  width: 134px;
-}
-
-.live_i {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 20px;
-  height: 20px;
-  background-image: url(./assets/live_icon.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.source_btn {
-  right: 133px;
-  position: relative;
-  width: 159px;
-}
-
-.source_i {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 20px;
-  height: 20px;
-  background-image: url(./assets/source_icon.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.blur {
-  filter: blur(4px);
+  background-color: #fff;
 }
 
 .center {
-  display: flex;
+  display: none;
   justify-content: center;
-  padding-top: 100px;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #C1C7D0;
+}
+
+
+.blured {
+  background: #C1C7D0;
 }
 
 .hide {
@@ -704,4 +662,51 @@ button {
   line-height: 24px;
   color: #7a869a;
   padding-right: 12px;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: flex-start;
+  height: 200px;
+}
+
+
+.butt {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 230px;
+  
+}
+
+.colum {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  width: 320px;
+  height: 60px;
+}
+.grid-item {
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #3c3a39;
+}
+
+.butt a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.butt a :hover {
+ background-color: #396df2;
 }

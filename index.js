@@ -5,7 +5,8 @@ const navItems = document.querySelector(".menu-list");
 const myLogo = document.querySelector(".logo");
 const popWindow = document.querySelector(".popup_card");
 const pButton = document.querySelector(".project_btn");
-const bod = document.querySelector(".main");
+const popup = document.querySelector("#popup");
+const body = document.querySelector("body");
 
 // const preventDefaultHandler = (e) => {
 //   e.preventDefault();
@@ -123,7 +124,7 @@ const accomplishmentHandler = () => {
           <li>${accomplishment.technologies[2]}</li>
         </ul>
         <div id='button-container'>
-          <button class='project_btn'>
+          <button class='project_btn btn'>
           See Project
          </button>
        </div>
@@ -147,6 +148,12 @@ function seeProject(k) {
   const popupDescription = document.querySelector(".popup_text");
   const popupImage = document.querySelector(".popup_img");
   const skillsStack = document.querySelector(".popup_skills");
+  const hor = document.querySelector('.horizontal');
+  const col = document.querySelector('.colum')
+  const but = document.querySelector('.butt');
+  const center = document.querySelector('.center');
+  const main = document.querySelector('.main');
+  const footer = document.querySelector('footer');
 
   title.innerText = accomplishmentArray[k].title;
   for (let l = 0; l < accomplishmentArray[k].skill.length; l += 1) {
@@ -162,8 +169,18 @@ function seeProject(k) {
     tech.innerText = accomplishmentArray[k].technologies[l];
     techStach.append(tech);
   }
+  techStach.append('')
+  col.append(techStach)
+  col.append(but);
+  hor.append(popupDescription);
+  hor.append(col);
   popWindow.classList.toggle("invisible");
-  //main.style.backgroundColor = "#C1C7D0;";
+  // popup.classList.add('blured')
+  body.style.background = "#c1c7d0";
+  body.style.overflowY= 'hidden';
+  center.style.display = 'flex';
+  main.style.display = 'none';
+  footer.style.display = 'none';
 }
 
 function closeProject() {
@@ -173,6 +190,7 @@ function closeProject() {
   techStack.innerHTML = "";
   nav.classList.toggle("blur");
   bod.classList.add(".hide");
+  
 }
 
 // const xProject = document.querySelector(".close_icon");
