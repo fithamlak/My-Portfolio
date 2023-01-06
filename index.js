@@ -7,6 +7,13 @@ const popWindow = document.querySelector(".popup_card");
 const pButton = document.querySelector(".project_btn");
 const popup = document.querySelector("#popup");
 const body = document.querySelector("body");
+const header = document.querySelector("header");
+const xProject = document.querySelector(".close_icon");
+const center = document.querySelector(".center");
+const main = document.querySelector(".main");
+const footer = document.querySelector("footer");
+const skillsStack = document.querySelector(".popup_skills");
+const techStach = document.querySelector(".tech_stack");
 
 // const preventDefaultHandler = (e) => {
 //   e.preventDefault();
@@ -148,12 +155,12 @@ function seeProject(k) {
   const popupDescription = document.querySelector(".popup_text");
   const popupImage = document.querySelector(".popup_img");
   const skillsStack = document.querySelector(".popup_skills");
-  const hor = document.querySelector('.horizontal');
-  const col = document.querySelector('.colum')
-  const but = document.querySelector('.butt');
-  const center = document.querySelector('.center');
-  const main = document.querySelector('.main');
-  const footer = document.querySelector('footer');
+  const hor = document.querySelector(".horizontal");
+  const col = document.querySelector(".colum");
+  const but = document.querySelector(".butt");
+  const center = document.querySelector(".center");
+  const main = document.querySelector(".main");
+  const footer = document.querySelector("footer");
 
   title.innerText = accomplishmentArray[k].title;
   for (let l = 0; l < accomplishmentArray[k].skill.length; l += 1) {
@@ -167,37 +174,42 @@ function seeProject(k) {
   for (let l = 0; l < accomplishmentArray[k].technologies.length; l += 1) {
     const tech = document.createElement("li");
     tech.innerText = accomplishmentArray[k].technologies[l];
-    techStach.append(tech);
+    if (techStach.children.length <= 5);
+    {
+      techStach.append(tech);
+    }
   }
-  techStach.append('')
-  col.append(techStach)
+  techStach.append("");
+  col.append(techStach);
   col.append(but);
   hor.append(popupDescription);
   hor.append(col);
   popWindow.classList.toggle("invisible");
   // popup.classList.add('blured')
   body.style.background = "#c1c7d0";
-  body.style.overflowY= 'hidden';
-  center.style.display = 'flex';
-  main.style.display = 'none';
-  footer.style.display = 'none';
+  header.style.background = "#c1c7d0";
+  header.classList.add("hide");
+
+  // body.style.overflowY = "hidden";
+  center.style.display = "flex";
+  main.classList.add("hide");
+  footer.classList.add("hide");
+  xProject.style.display = "block";
 }
 
 function closeProject() {
-  const techStack = document.querySelector(".tech_stack");
-  const main = document.querySelector(".main");
-  popupWindow.classList.toggle("invisible");
-  techStack.innerHTML = "";
-  nav.classList.toggle("blur");
-  bod.classList.add(".hide");
-  
+  popWindow.classList.toggle("invisible");
+  skillsStack.innerHTML = "";
+  techStach.innerHTML = "";
+  body.style.background = "#fff";
+  header.style.background = "#fff";
+  header.classList.remove("hide");
+
+  body.classList.remove("hide");
+  center.style.display = "none";
+  main.classList.remove("hide");
+  footer.classList.remove("hide");
+  // skillsStack.remove(appendChild);
 }
 
-// const xProject = document.querySelector(".close_icon");
-// xProject.addEventListener("click", closeProject);
-
-// const projectButtons = document.querySelectorAll('.project_btn');
-// console.log(pButton);
-// for (let k = 0; k < projectButtons.length; k += 1) {
-//   projectButtons[k].addEventListener('click', () => seeProject(k));
-// }
+xProject.addEventListener("click", closeProject);
