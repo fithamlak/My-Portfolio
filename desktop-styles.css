@@ -159,7 +159,6 @@ header {
   animation: 2s 1 alternate slidein;
 }
 
-/* transition effect */
 @keyframes slidein {
   from {
     margin-left: 100%;
