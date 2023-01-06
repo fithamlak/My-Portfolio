@@ -27,15 +27,12 @@ header {
 }
 
 .menu-list a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
   color: #344563;
-  background-color: blue;
-  cursor: pointer;
-  padding-left: 12px;
-  /* z-index: 101; */
 }
 
 .logo {
@@ -75,18 +72,6 @@ header {
 
 .close-button {
   display: none;
-}
-
-.menu-bar {
-  width: 87px;
-  height: 40px;
-  margin: 6px 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  font-weight: 500;
-  font-size: 15px;
-  color: #344563;
 }
 
 .menu-bar a {
@@ -278,7 +263,7 @@ transition effect {
 .content-container > .technologies {
   list-style-type: none;
   padding: 3px 0;
-  margin: 0 24px 56px 24px;
+  margin: 0 24px 26px 24px;
   display: flex;
 }
 
@@ -294,8 +279,9 @@ transition effect {
 }
 
 #button-container {
-  padding: 12px 0;
+  padding: 12px;
   width: 100%;
+  margin-top: -10px;
 }
 
 .btn {
@@ -370,7 +356,8 @@ transition effect {
   margin: 0;
   display: flex;
   align-items: flex-start;
-  width: 400px;
+  width: 800px;
+  margin-left: 50px;
 }
 
 #categories-item {
@@ -385,10 +372,12 @@ transition effect {
   font-weight: 500;
   font-size: 20px;
   margin-top: 20px;
+  margin-left: -20px;
 }
 
 #categories-item > .fa-solid {
   color: #727e93;
+  right: 30px;
 }
 
 .bottom-border {
@@ -402,6 +391,7 @@ transition effect {
   margin: 0;
   height: 144px;
   width: 320px;
+  padding: 0;
 }
 
 .detail {
@@ -416,11 +406,12 @@ transition effect {
   height: 115px;
   color: #253858;
   width: 100px;
+  /* margin-left: -20px; */
 }
 
 .detail > img {
-  mix-blend-mode: multiply;
   object-fit: contain;
+  margin-left: -10px;
 }
 
 footer {
@@ -536,7 +527,7 @@ button {
   overflow-y: auto;
 }
 
-.invisible {
+.invisble {
   display: none;
 }
 

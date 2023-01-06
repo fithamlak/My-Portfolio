@@ -1,3 +1,4 @@
+// Variables for html elements
 const nav = document.querySelector("#toolbar");
 const hamburgerButton = document.querySelector(".hamberger");
 const closeButton = document.querySelector(".close-button");
@@ -15,9 +16,7 @@ const footer = document.querySelector("footer");
 const skillsStack = document.querySelector(".popup_skills");
 const techStach = document.querySelector(".tech_stack");
 
-// const preventDefaultHandler = (e) => {
-//   e.preventDefault();
-// };
+// function to open mobile menu when hamberger is clicked
 function openNav() {
   nav.classList.remove("toolbar");
   nav.classList.add("header-bg-color");
@@ -27,7 +26,7 @@ function openNav() {
   navItems.classList.toggle("invisible");
   navItems.classList.toggle("open_menu");
 }
-
+// function to close mobile menu when close icon  is clicked
 function closeNav() {
   nav.classList.remove("header-bg-color");
   nav.classList.add("toolbar");
@@ -37,11 +36,12 @@ function closeNav() {
   navItems.classList.toggle("invisible");
   navItems.classList.toggle("open_menu");
 }
-
+// add enent listners for html elements
 hamburgerButton.addEventListener("click", openNav);
 closeButton.addEventListener("click", closeNav);
 navItems.addEventListener("click", closeNav);
 
+// array of objects with propertis and datas for accomplishments
 const accomplishmentArray = [
   {
     id: 0,
@@ -100,6 +100,8 @@ const accomplishmentArray = [
     source: "https://github.com/fithamlak/My-portfolio",
   },
 ];
+
+// daynamic creation of accomplishments
 const accomplishmentHandler = () => {
   const accomplishments = document.getElementById("works");
   accomplishmentArray.forEach((accomplishment, index) => {
@@ -147,7 +149,7 @@ const accomplishmentHandler = () => {
 window.onload = () => {
   accomplishmentHandler();
 };
-
+// function to display details popup windo when seeProjrct buttons of each accomplishment clicked
 function seeProject(k) {
   console.log("am clicked");
   const title = document.querySelector(".popup_title");
@@ -189,7 +191,7 @@ function seeProject(k) {
   col.append(but);
   hor.append(popupDescription);
   hor.append(col);
-  popWindow.classList.toggle("invisible");
+  popWindow.classList.toggle("invisble");
   // popup.classList.add('blured')
   body.style.background = "#c1c7d0";
   header.style.background = "#c1c7d0";
@@ -202,19 +204,18 @@ function seeProject(k) {
   xProject.style.display = "block";
 }
 
+// Function to close details popup windo when close icon is clicked
 function closeProject() {
-  popWindow.classList.toggle("invisible");
+  popWindow.classList.toggle("invisble");
   skillsStack.innerHTML = "";
   techStach.innerHTML = "";
   body.style.background = "#fff";
   header.style.background = "#fff";
   header.classList.remove("hide");
-
   body.classList.remove("hide");
   center.style.display = "none";
   main.classList.remove("hide");
   footer.classList.remove("hide");
-  // skillsStack.remove(appendChild);
 }
 
 xProject.addEventListener("click", closeProject);
