@@ -7,12 +7,12 @@
     <title>Fithamlak Portfolio Page</title>
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1023px)" href="styles.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1024px)" href="desktop-styles.css" />
-
-
+  
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -30,7 +30,7 @@
           <a href="#" class="close_container"><img src="./images/cancel-Icon.svg" alt="cancel icon" class="close-button invisible"></a>
            <ul class="menu-list invisible">
               <li class="menu-bar">
-                <a href="#works-container">Portfolio</a>
+                <a href="#works">Portfolio</a>
               </li>
               <li class="menu-bar">
                 <a href="#about-container">About</a>
@@ -42,6 +42,33 @@
          </div>
       </nav>
     </header>
+    <section id="popup" class="center">
+      <article class="popup_card invisble">
+          <h4 class="popup_title"></h4>
+          <a href="#" class="close_icon"></a>
+          <!-- <div id="close-btnn">&times;</div> -->
+          <ul class="popup_skills"></ul>
+          <img class="popup_img"></img>
+          <div class="horizontal">
+            <p class="popup_text"></p>
+            <div class="colum">
+              <ul class="tech_stack"></ul>
+              <div class="butt">
+                <a href='https://fithamlak.github.io/' class="btn">See live <i class='fa-solid fa-arrow-up-right-from-square '></i></a>
+                <a href='https://github.com/fithamlak/My-portfolio' class="btn">See source <i class='fa-brands fa-github'></i></a>
+              </div>
+            </div>
+        
+          </div>
+          
+        
+            
+          </div>
+          
+          
+        </article>
+      </section>
+  <main class="main">
     <section id="headline-container">
       <ul id="headline">
         <li>
@@ -111,168 +138,30 @@
         </li>
       </ul>
     </section>
-    <section id="works-container">
-        <div class="achomplishment-card">
-          <div class="image-container">
-            <img  class="desktop-view" src="./images/work1-desktop-view.svg"
-            alt="work_tonic_daily_personalized_reads" 
-            />
-           <img
-            class="mobile-view" src="images/first-work.svg"
-            alt="work_tonic_daily_personalized_reads"
-           />
-          </div>
-          <div class="content-container">
-            <h2>Tonic</h2>
-            <ul class="skill">
-            <li>Canopy</li>
-            <li>&#x2022;</li>
-            <li>Back End Dev</li>
-            <li>&#x2022;</li>
-            <li>2015</li>
-           </ul>
-           <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="technologies">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <div id="button-container">
-            <button type="button" class="btn">
-              <a href="#">See Project</a>
-            </button>
-          </div>
-        </div>
-        </div>
-        <div class="achomplishment-card">
-          <div class="image-container">
-            <img  class="desktop-view" src="./images/work2-desktop-view.svg"
-            alt="work_multi-post_stories_daily_personalized_reads"
-            />
-           <img
-            class="mobile-view" src="images/second-work.svg"
-            alt="work_multi-post_stories_daily_personalized_reads"
-          />
-          </div> 
-          <div class="content-container">
-           <h2>Multi-Post Stories</h2>
-           <ul class="skill">
-            <li>Canopy</li>
-            <li>&#x2022;</li>
-            <li>Back End Dev</li>
-            <li>&#x2022;</li>
-            <li>2015</li>
-          </ul>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="technologies">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <div id="button-container">
-            <button type="button" class="btn">
-              <a href="#">See Project</a>
-            </button>
-          </div>
-          </div>
-        </div>
-        <div class="achomplishment-card">
-          <div class="image-container">
-            <img class="desktop-view" src="./images/work3-desktop-view.svg" 
-            alt="work_multi-post_stories_daily_personalized_reads"
-            />
-           <img class="mobile-view"
-            src="images/third-work.svg"
-            alt="work_multi-post_stories_daily_personalized_reads"
-           />
-          </div>
-          <div class="content-container">
-          <h2>Tonic</h2>
-          <ul class="skill">
-            <li>Canopy</li>
-            <li>&#x2022;</li>
-            <li>Back End Dev</li>
-            <li>&#x2022;</li>
-            <li>2015</li>
-          </ul>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="technologies">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <div id="button-container">
-            <button type="button" class="btn">
-              <a href="#">See Project</a>
-            </button>
-          </div>
-        </div>
-      </div>
-        <div class="achomplishment-card">
-          <div class="image-container">
-            <img class="desktop-view" src="./images/work4-desktop-view.svg" 
-            alt="work_multi-post_stories_daily_personalized_reads"
-            />
-            <img class="mobile-view"
-            src="images/fourth-work.svg"
-            alt="work_multi-post_stories_daily_personalized_reads"
-           />
-          </div>
-        <di class="content-container">
-          <h2>Multi-Post Stories</h2>
-          <ul class="skill">
-            <li>Canopy</li>
-            <li>&#x2022;</li>
-            <li>Back End Dev</li>
-            <li>&#x2022;</li>
-            <li>2015</li>
-          </ul>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="technologies">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <div id="button-container">
-            <button type="button" class="btn">
-              <a href="#">See Project</a>
-            </button>
-          </div>
-        </di> 
-        </div>
-      </ul>
-  </section>
-  <section id="about-container">
-    <ul id="about">
-      <li>
-        <h2 class="header">
+    <section>
+      <ul id="works"></ul>
+    </section> 
+    
+    
+     <section id="about-container">
+      <ul id="about">
+        <li>
+         <h2 class="header">
           <span>About<br />Myself</span>
-        </h2>
-      </li>
-      <li>
+         </h2>
+       </li>
+       <li>
         <p class="text">
           I’m a software developer! I can help you build a product, feature or
           website. Look through some of my work and experience! If you like
           what you see and have a project you need coded, don’t hestiate to
           contact me.
         </p>
-      </li>
-      <li>
+       </li>
+       <li>
         <h2 id="connect">Let's Connect</h2>
-      </li>
-      <li id="social-icons-container">
+       </li>
+       <li id="social-icons-container">
         <ul id="social-icons">
           <li class="icon">
             <a
@@ -360,7 +249,8 @@
         </ul>
     </div>
     </ul>
-  </section>
+   </section>
+  </main>
   <footer>
     <h2 id="footer-header">Contact me</h2>
     <p id="footer-paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
@@ -384,7 +274,7 @@
       </ul>
     </form>
   </footer>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
   </body>
 </html>
 
