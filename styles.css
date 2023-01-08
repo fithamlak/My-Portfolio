@@ -171,12 +171,32 @@ header {
   color: #172b4d;
 }
 
+.popup_skills li {
+  font-weight: 600;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7a869a;
+}
+
 .content-container > .skill {
   list-style-type: none;
   padding: 6px 0;
   margin: 0;
   display: flex;
   gap: 12px;
+}
+
+.tech_stack li {
+  list-style: none;
+  padding: 4px 12px;
+  margin-right: 8px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
 .content-container > .skill > li {
@@ -267,7 +287,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   row-gap: 12px;
-  margin-bottom: 100px;
+  margin-bottom: 0 0 100px 0;
   list-style-type: none;
   padding: 0;
 }
@@ -407,6 +427,14 @@ form textarea {
   font-family: "Poppins", sans-serif;
 }
 
+.validation-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: red;
+  font-size: 12px;
+}
+
 .button {
   width: 140px;
   margin-top: 22px;
@@ -471,10 +499,154 @@ nav ul {
   margin-top: 20px;
 }
 
-.validation-message {
-  display: flex;
+.center {
+  display: none;
   justify-content: center;
-  margin-top: 10px;
-  color: red;
-  font-size: 12px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c1c7d0;
+}
+
+/* popup for mobile */
+.popup_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  max-width: 375px;
+  margin-top: -130px;
+  background-color: #fff;
+  border: solid 1px #dfe1e6;
+  padding-left: 20px;
+  padding-right: 10px;
+  place-self: center;
+  position: fixed;
+  z-index: 500;
+  border-radius: 2rem;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.popup_card h4 {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 5px;
+  margin-top: 24px;
+}
+
+.popup_card h4 ::after {
+  content: "x";
+  position: absolute;
+  right: -20px;
+}
+
+.close_icon {
+  display: none;
+  position: absolute;
+  right: 55px;
+  top: 48px;
+  width: 20px;
+  height: 15px;
+  background-image: url("./images/cancel-Icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.popup_card p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #344563;
+  width: 70%;
+  padding: 5px;
+}
+
+.tech_stack {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+  row-gap: 10px;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.popup_img {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  background-color: #fff;
+}
+
+.blured {
+  background: #c1c7d0;
+}
+
+.hide {
+  display: none;
+}
+
+.popup_skills {
+  display: flex;
+  padding: 0;
+  margin: 0 24px 0 10px;
+  margin-right: 24px;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.popup_skills :first-child {
+  padding-left: 0;
+  list-style: none;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.butt {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 350px;
+}
+
+.colum {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  width: 500px;
+  height: 60px;
+}
+
+.butt a {
+  text-decoration: none;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.butt a :hover {
+  background-color: #396df2;
 }
