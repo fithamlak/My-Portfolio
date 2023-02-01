@@ -148,7 +148,7 @@ const accomplishmentArray = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     ImageForMobile: './images/IoTMobile.PNG',
     ImageForDesktop: './images/IoT2.PNG',
-    accomplishmentDetailModel: './images/IoT-model.PNG',
+    accomplishmentDetailModel: './images/Iot-model.PNG',
     alt: 'work_tonic_daily_personalized_reads',
     live: 'https://fithamlak.github.io/IoT-Conference-CP1/',
     source: 'https://github.com/fithamlak/IoT-Conference-CP1',
