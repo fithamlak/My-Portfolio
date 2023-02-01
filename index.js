@@ -141,31 +141,31 @@ function retrieveData() {
 const accomplishmentArray = [
   {
     id: 0,
-    title: 'Tonic',
+    title: 'IoT Submit',
     skill: ['Canopy', 'Back End Dev', '2015'],
     description:
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'This is a fully responsive static web for an Internet of Things summit. Users can navigate through multiple sections. This project was built using  JavaScript, HTML & CSS',
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: './images/first-work.svg',
-    ImageForDesktop: './images/work1-desktop-view.svg',
-    accomplishmentDetailModel: './images/accomplishment-details-model.svg',
+    ImageForMobile: './images/IoTMobile.PNG',
+    ImageForDesktop: './images/IoT2.PNG',
+    accomplishmentDetailModel: './images/IoT-model.PNG',
     alt: 'work_tonic_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    live: 'https://fithamlak.github.io/IoT-Conference-CP1/',
+    source: 'https://github.com/fithamlak/IoT-Conference-CP1',
   },
   {
     id: 1,
-    title: 'Multi-Post Stories',
+    title: 'Todo-List',
     skill: ['Canopy', 'Back End Dev', '2015'],
     description:
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'To Do List is a web used to help with everyday todo lists. Users can add, remove, edit or clear tasks from the list, this application was built in vanilla JavaScript. It uses browsers memory to save tasks',
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    ImageForMobile: './images/second-work.svg',
-    ImageForDesktop: './images/work2-desktop-view.svg',
-    accomplishmentDetailModel: './images/accomplishment-details-model.svg',
+    ImageForMobile: './images/todolist-mobile.PNG',
+    ImageForDesktop: './images/todo-list.PNG',
+    accomplishmentDetailModel: './images/todolist-model.PNG',
     alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-portfolio',
+    live: 'https://fithamlak.github.io/To-do-list/dist/',
+    source: 'https://github.com/fithamlak/To-do-list/',
   },
   {
     id: 2,
@@ -225,17 +225,34 @@ function seeProject(k) {
   popupDescription.innerText = accomplishmentArray[k].description;
 
   for (let l = 0; l < accomplishmentArray[k].technologies.length; l += 1) {
-    const tech = document.createElement('li');
-    tech.innerText = accomplishmentArray[k].technologies[l];
     if (techStach.children.length <= 5) {
+      const tech = document.createElement('li');
+      tech.innerText = accomplishmentArray[k].technologies[l];
       techStach.append(tech);
     }
   }
-  techStach.append('');
-  col.append(techStach);
-  col.append(but);
-  hor.append(popupDescription);
-  hor.append(col);
+
+  if (but.children.length <= 1) {
+    const liveElement = document.createElement('a');
+    liveElement.href = accomplishmentArray[k].live;
+    liveElement.innerText = 'see Live';
+    const liveIcon = document.createElement('i');
+    liveIcon.classList.add('fa-solid', 'fa-arrow-up-right-from-square');
+    liveElement.appendChild(liveIcon);
+    but.appendChild(liveElement);
+    const sourceElement = document.createElement('a');
+    sourceElement.href = accomplishmentArray[k].source;
+    sourceElement.innerText = 'See source';
+    const sourceIcon = document.createElement('i');
+    sourceIcon.classList.add('fa-brands', 'fa-github');
+    sourceElement.appendChild(sourceIcon);
+    but.appendChild(sourceElement);
+    techStach.append('');
+    col.append(techStach);
+    col.append(but);
+    hor.append(popupDescription);
+    hor.append(col);
+  }
   popWindow.classList.toggle('invisble');
   // popup.classList.add('blured')
   body.style.background = '#c1c7d0';

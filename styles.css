@@ -130,19 +130,19 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: calc(50% - 173px);
+  margin-left: calc(50% - 195px);
   margin-top: 88px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
-  height: 552px;
-  padding: 16px;
+  min-width: 327px;
+  padding: 16px 5px 16px 5px;
 }
 
 .image-container {
   width: 327px;
   height: auto;
+  margin-left: 0;
 }
 
 .image-container > img {
@@ -159,7 +159,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .content-container > h2 {
@@ -216,7 +216,9 @@ header {
 
 .content-container > p {
   margin: 0;
+  margin-right: 3px;
   padding: 0;
+  padding-left: 3px;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -287,7 +289,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   row-gap: 12px;
-  margin-bottom: 0 0 100px 0;
+  margin-bottom: 100px;
   list-style-type: none;
   padding: 0;
 }
@@ -516,7 +518,7 @@ nav ul {
   max-width: 375px;
   margin-top: -30px;
   background-color: #fff;
-  border: solid 1px #101420;
+  border: solid 1px #dfe1e6;
   padding-left: 20px;
   padding-right: 10px;
   place-self: center;

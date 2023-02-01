@@ -40,39 +40,42 @@ in attractive and evidence full way. this project is the part of my future full 
 
 - **Responsive pages**
 - **Contact form**
+- **Correct use of the Figma templates on the project.**
+- **Correct use of the linters to have a Html/Css clean code.**
+- **Understand how to parse a Figma design to create a UI.**
+- **Use Flexbox to place elements in the page.**
+- **Use CSS Grid to place elements in the page.**
+- **Build a personal portfolio site.**
+- **Create forms with HTML5 validations.**
+- **Understand the importance of UX.**
+- **Understand how to parse a Figma design to create a UI.**
+- **Understand how to create UIs adaptable to different screen sizes using media queries.**
+- **Use GitHub Pages to deploy web pages.**
+- **Demonstrate ability to ask clarifying questions about ambiguous requirements.**
+- **Use basic JavaScript syntax.**
+- **Use JavaScript to manipulate DOM elements.**
+- **Use JavaScript events.**
 
 ### Getting Started <a name="getting-started"></a>
-```sh
-  cd my-folder
-  git clone git@github.com:fithamlak/portfolio.git
-```
-  
-### Prerequisites
-In order to run the tests for this project you need:
 
-Example command
+To get a local copy up and running, follow these steps.
+- **create empity folde in your lacal envirinment.**
+- **open terminal and run the follwing.**
+
 ```sh
- npm install
+  git clone git@github.com:fithamlak/portfolio.git
 ```
 
 ### Setup
 
-```sh
-  cd my-folder
-  git clone git@github.com:fithamlak/portfolio.git
-```
-
-
-
+- go to My-portifolio folder one step inside from you cloned
+- Go to the main branch.
+- Open the index.html file in your browser
+- Enjoy it. 😃
 
 ### Install
 
 n/a
-
-### Usage
-
-Open index.html in your preferred browser.
-
 
 ### Run tests
 
@@ -95,7 +98,7 @@ To run tests, run the following command:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://fithamlak.github.io/)
+- [Live Demo Link](https://fithamlak.github.io/My-Portfolio/)
 
 - [Loom walkthrough of the project](https://www.loom.com/share/fc0e5191009b44e9bd8299b642107569)
 
@@ -111,6 +114,11 @@ To run tests, run the following command:
 - GitHub: [@fithamlak](https://github.com/fithamlak)
 - Twitter: [@FithamlakF](https://twitter.com/Fithamlak)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/fithamlak-fikrie-942169225)
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **CSS Frameworks**
+- **Javascript**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
