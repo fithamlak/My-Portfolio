@@ -225,33 +225,33 @@ function seeProject(k) {
   popupDescription.innerText = accomplishmentArray[k].description;
 
   for (let l = 0; l < accomplishmentArray[k].technologies.length; l += 1) {
-    if (techStach.children.length <= 5){
-    const tech = document.createElement('li');
-    tech.innerText = accomplishmentArray[k].technologies[l];
+    if (techStach.children.length <= 5) {
+      const tech = document.createElement('li');
+      tech.innerText = accomplishmentArray[k].technologies[l];
       techStach.append(tech);
     }
   }
 
   if (but.children.length <= 1) {
-  const liveElement = document.createElement('a');
-  liveElement.href = accomplishmentArray[k].live;
-  liveElement.innerText = 'see Live';
-  const liveIcon = document.createElement('i');
-  liveIcon.classList.add('fa-solid', 'fa-arrow-up-right-from-square');
-  liveElement.appendChild(liveIcon);
-  but.appendChild(liveElement);
-  const sourceElement = document.createElement('a');
-  sourceElement.href = accomplishmentArray[k].source;
-  sourceElement.innerText = 'See source';
-  const sourceIcon = document.createElement('i');
-  sourceIcon.classList.add('fa-brands', 'fa-github');
-  sourceElement.appendChild(sourceIcon);
-  but.appendChild(sourceElement);
-  techStach.append('');
-  col.append(techStach);
-  col.append(but);
-  hor.append(popupDescription);
-  hor.append(col);
+    const liveElement = document.createElement('a');
+    liveElement.href = accomplishmentArray[k].live;
+    liveElement.innerText = 'see Live';
+    const liveIcon = document.createElement('i');
+    liveIcon.classList.add('fa-solid', 'fa-arrow-up-right-from-square');
+    liveElement.appendChild(liveIcon);
+    but.appendChild(liveElement);
+    const sourceElement = document.createElement('a');
+    sourceElement.href = accomplishmentArray[k].source;
+    sourceElement.innerText = 'See source';
+    const sourceIcon = document.createElement('i');
+    sourceIcon.classList.add('fa-brands', 'fa-github');
+    sourceElement.appendChild(sourceIcon);
+    but.appendChild(sourceElement);
+    techStach.append('');
+    col.append(techStach);
+    col.append(but);
+    hor.append(popupDescription);
+    hor.append(col);
   }
   popWindow.classList.toggle('invisble');
   // popup.classList.add('blured')
