@@ -141,17 +141,17 @@ function retrieveData() {
 const accomplishmentArray = [
   {
     id: 0,
-    title: 'IoT Submit',
-    skill: ['Canopy', 'Back End Dev', '2015'],
+    title: 'stock-app',
+    skill: ['Ract', 'Redux', 'Axios'],
     description:
-    'This is a fully responsive static web for an Internet of Things summit. Users can navigate through multiple sections. This project was built using  JavaScript, HTML & CSS',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    'is a single page web application (SPA) built with React, Redux, Axios, and Jest, which shows a list of popular companies stock tickers, and shows detailed financial metrics for each company stock ticker',
+    technologies: ['Axios', 'jest', 'javascript', 'github', 'React', 'redux'],
     ImageForMobile: './images/IoTMobile.PNG',
-    ImageForDesktop: './images/IoT2.PNG',
-    accomplishmentDetailModel: './images/Iot-model.PNG',
-    alt: 'work_tonic_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/IoT-Conference-CP1/',
-    source: 'https://github.com/fithamlak/IoT-Conference-CP1',
+    ImageForDesktop: './images/stock-app.PNG',
+    accomplishmentDetailModel: './images/stock-app.PNG',
+    alt: 'stock feature app',
+    live: 'https://stock-app-anup.onrender.com/',
+    source: 'https://github.com/fithamlak/stock-app',
   },
   {
     id: 1,
