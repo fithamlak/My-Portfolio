@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>Dennis Every's Portfolio Page</b></h1>
+  <h1><b>Fithamlak Fikries's Portfolio Page</b></h1>
   <br>
   <img src="./images/home.png" alt="screenshot" width="40%"  height="80%" />
   <img src="./images/menu.png" alt="screenshot" width="40%"  height="80%" />
