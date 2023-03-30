@@ -125,17 +125,17 @@ btnReset.addEventListener('click', (event) => {
 const worksArray = [
   {
     id: 0,
-    title: 'Tonic',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Space Travlers Hub',
+    experiences: ['MERN stack', ' Testing', '2023'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    urlMobile: '/images/work_1.jpg',
-    urlDesktop: '/images/work_1_lg.png',
-    urlModal: '/images/work_modal.png',
+      '[Space Travelers Hub] is a Single Page JavaScript project, using React and ES6 features which fetch the rocket and missions data from spaceX rockets, spaceX missions API and we can reserve or cancel a Rockets and join or cancel a Missions.',
+    technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Jest', 'Bootstraps', 'Reactbootsrap'],
+    urlMobile: '/images/Space.PNG',
+    urlDesktop: '/images/Space.PNG',
+    urlModal: '/images/Space.PNG',
     alt: 'work_tonic_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-Portifolio',
+    live: 'https://space-travelers-f5v3.onrender.com/',
+    source: 'https://github.com/Iqbal-Elham/Space-Travelers-Hub',
   },
   {
     id: 1,
