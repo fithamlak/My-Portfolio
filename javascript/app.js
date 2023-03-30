@@ -167,17 +167,17 @@ const worksArray = [
   },
   {
     id: 3,
-    title: 'Multi-Post Stories',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Meal-app',
+    experiences: ['javaScript', 'JavaScript API', '2023'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      'MEAL APP is a JavaScript capstone project for building our own web application based on an external API. We choose a meal API which is an API that provides data about different meals that one can like and add comments and then build the webapp around it. The app has 2 interfaces (One for the home page and the other for showing and adding comments).',
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    urlMobile: 'images/work_4.jpg',
-    urlDesktop: 'images/work_4_lg.png',
-    urlModal: '/images/work_modal.png',
+    urlMobile: 'images/meal-app.PNG',
+    urlDesktop: 'images/meal-app.PNG',
+    urlModal: '/images/meal-app.PNG',
     alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://fithamlak.github.io/',
-    source: 'https://github.com/fithamlak/My-Portifolio',
+    live: 'https://fithamlak.github.io/meal-app/dist/',
+    source: 'https://github.com/fithamlak/meal-app',
   },
 ];
 
