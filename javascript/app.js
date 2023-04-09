@@ -131,7 +131,7 @@ const worksArray = [
       '[Space Travelers Hub] is a Single Page JavaScript project, using React and ES6 features which fetch the rocket and missions data from spaceX rockets, spaceX missions API and we can reserve or cancel a Rockets and join or cancel a Missions.',
     technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Jest', 'Bootstraps', 'Reactbootsrap'],
     urlMobile: '/images/Space.PNG',
-    urlDesktop: '/images/Space.PNG',
+    urlDesktop: '/images/travlers.PNG',
     urlModal: '/images/Space.PNG',
     alt: 'work_tonic_daily_personalized_reads',
     live: 'https://space-travelers-f5v3.onrender.com/',
