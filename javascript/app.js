@@ -129,7 +129,7 @@ const worksArray = [
     experiences: ['RoR', ' Testing', '2023'],
     description:
       '[Budget Tracker] Is A mobile web application built with Ruby on Rails where users can manage their budget; users can list expenses associated with a category and see how much money they have spent and on what',
-    technologies: ['sass', 'CSS3', 'Ruby', 'github', 'Rails', 'specr', 'Jest', 'Bootstraps', 'Reactbootsrap'],
+    technologies: ['sass', 'CSS3', 'Ruby', 'github', 'Rails', 'specr', 'Jest', 'Bootstraps'],
     urlMobile: '/images/categories_phon.PNG',
     urlDesktop: '/images/categories.jpg',
     urlModal: '/images/Categories.jpg',
