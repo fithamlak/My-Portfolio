@@ -125,6 +125,20 @@ btnReset.addEventListener('click', (event) => {
 const worksArray = [
   {
     id: 0,
+    title: 'Budget Tracker',
+    experiences: ['RoR', ' Testing', '2023'],
+    description:
+      '[Budget Tracker] Is A mobile web application built with Ruby on Rails where users can manage their budget; users can list expenses associated with a category and see how much money they have spent and on what',
+    technologies: ['sass', 'CSS3', 'Ruby', 'github', 'Rails', 'specr', 'Jest', 'Bootstraps', 'Reactbootsrap'],
+    urlMobile: '/images/categories_phon.PNG',
+    urlDesktop: '/images/categories.PNG',
+    urlModal: '/images/Categories.PNG',
+    alt: 'Budget Traccker',
+    live: 'https://expense-tracker-nl4s.onrender.com/',
+    source: 'https://github.com/fithamlak/Budget-App',
+  },
+  {
+    id: 1,
     title: 'Space Travlers Hub',
     experiences: ['MERN stack', ' Testing', '2023'],
     description:
@@ -138,7 +152,7 @@ const worksArray = [
     source: 'https://github.com/Iqbal-Elham/Space-Travelers-Hub',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Stocks-app',
     experiences: ['MERN stack', 'Testing', '2023'],
     description:
@@ -152,7 +166,7 @@ const worksArray = [
     source: 'https://github.com/fithamlak/stock-app',
   },
   {
-    id: 2,
+    id: 3,
     title: 'math-magicians',
     experiences: ['MERN stack', 'Testing', '2023'],
     description:
@@ -166,7 +180,7 @@ const worksArray = [
     source: 'https://github.com/fithamlak/math-magicians',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Meal-app',
     experiences: ['javaScript', 'JavaScript API', '2023'],
     description:
