@@ -108,7 +108,7 @@ fieldset {
   height: 100%;
   width: 100%;
   background: #fff;
-  background-image: url('./images/headline-bg-desktop.PNG');
+  background-image: url('../images/headline-bg-desktop.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 0 0 0 90px;
@@ -166,7 +166,7 @@ fieldset {
 
 @media screen and (min-width: 768px) {
   #headline-container {
-    background-image: url('/images/headline-bg-desktop.png');
+    background-image: url('../images/headline-bg-desktop.png');
     background-size: 100% auto;
     min-height: 846px;
     margin: 48px 0 0 0;
