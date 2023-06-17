@@ -123,8 +123,23 @@ btnReset.addEventListener('click', (event) => {
 });
 
 const worksArray = [
+
   {
     id: 0,
+    title: 'Stocks-app',
+    experiences: ['MERN stack', 'Testing', '2023'],
+    description:
+      'STOCKS is a single page web application (SPA) built with React, Redux, Axios, and Jest, which shows a list of popular companies stock tickers, and shows detailed financial metrics for each company stock ticker',
+    technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Bootstraps'],
+    urlMobile: 'images/stock-app.PNG',
+    urlDesktop: 'images/stock-app.PNG',
+    urlModal: '/images/stock-app.PNG',
+    alt: 'work_multi-post_stories_daily_personalized_reads',
+    live: 'https://stock-app-anup.onrender.com/',
+    source: 'https://github.com/fithamlak/stock-app',
+  },
+  {
+    id: 1,
     title: 'Budget Tracker',
     experiences: ['RoR', ' Testing', '2023'],
     description:
@@ -138,7 +153,7 @@ const worksArray = [
     source: 'https://github.com/fithamlak/Budget-App',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Space Travlers Hub',
     experiences: ['MERN stack', ' Testing', '2023'],
     description:
@@ -150,20 +165,6 @@ const worksArray = [
     alt: 'space travlers hub',
     live: 'https://space-travelers-f5v3.onrender.com/',
     source: 'https://github.com/Iqbal-Elham/Space-Travelers-Hub',
-  },
-  {
-    id: 2,
-    title: 'Stocks-app',
-    experiences: ['MERN stack', 'Testing', '2023'],
-    description:
-      'STOCKS is a single page web application (SPA) built with React, Redux, Axios, and Jest, which shows a list of popular companies stock tickers, and shows detailed financial metrics for each company stock ticker',
-    technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Bootstraps'],
-    urlMobile: 'images/stock-app.PNG',
-    urlDesktop: 'images/stock-app.PNG',
-    urlModal: '/images/stock-app.PNG',
-    alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://stock-app-anup.onrender.com/',
-    source: 'https://github.com/fithamlak/stock-app',
   },
   {
     id: 3,
