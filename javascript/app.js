@@ -130,9 +130,9 @@ const worksArray = [
     description:
       '[Budget Tracker] Is A mobile web application built with Ruby on Rails where users can manage their budget; users can list expenses associated with a category and see how much money they have spent and on what',
     technologies: ['sass', 'CSS3', 'Ruby', 'github', 'Rails', 'specr', 'Jest', 'Bootstraps'],
-    urlMobile: '/images/categories_phon.PNG',
-    urlDesktop: '/images/categories.JPG',
-    urlModal: '/images/Categories.JPG',
+    urlMobile: '/images/categories1.PNG',
+    urlDesktop: '/images/categories1.PNG',
+    urlModal: '/images/Categorie1.PNG',
     alt: 'Budget Traccker',
     live: 'https://expense-tracker-nl4s.onrender.com/',
     source: 'https://github.com/fithamlak/Budget-App',
