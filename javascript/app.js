@@ -123,23 +123,9 @@ btnReset.addEventListener('click', (event) => {
 });
 
 const worksArray = [
-
+  
   {
     id: 0,
-    title: 'Stocks-app',
-    experiences: ['MERN stack', 'Testing', '2023'],
-    description:
-      'STOCKS is a single page web application (SPA) built with React, Redux, Axios, and Jest, which shows a list of popular companies stock tickers, and shows detailed financial metrics for each company stock ticker',
-    technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Bootstraps'],
-    urlMobile: 'images/stock-app.PNG',
-    urlDesktop: 'images/stock-app.PNG',
-    urlModal: '/images/stock-app.PNG',
-    alt: 'work_multi-post_stories_daily_personalized_reads',
-    live: 'https://stock-app-anup.onrender.com/',
-    source: 'https://github.com/fithamlak/stock-app',
-  },
-  {
-    id: 1,
     title: 'Budget Tracker',
     experiences: ['RoR', ' Testing', '2023'],
     description:
@@ -153,15 +139,29 @@ const worksArray = [
     source: 'https://github.com/fithamlak/Budget-App',
   },
   {
+    id: 1,
+    title: 'Stocks-app',
+    experiences: ['MERN stack', 'Testing', '2023'],
+    description:
+      'STOCKS is a single page web application (SPA) built with React, Redux, Axios, and Jest, which shows a list of popular companies stock tickers, and shows detailed financial metrics for each company stock ticker',
+    technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Bootstraps'],
+    urlMobile: './images/stock-app.PNG',
+    urlDesktop: './images/stock-app.PNG',
+    urlModal: './images/stock-app.PNG',
+    alt: 'work_multi-post_stories_daily_personalized_reads',
+    live: 'https://stock-app-anup.onrender.com/',
+    source: 'https://github.com/fithamlak/stock-app',
+  },
+  {
     id: 2,
     title: 'Space Travlers Hub',
     experiences: ['MERN stack', ' Testing', '2023'],
     description:
       '[Space Travelers Hub] is a Single Page JavaScript project, using React and ES6 features which fetch the rocket and missions data from spaceX rockets, spaceX missions API and we can reserve or cancel a Rockets and join or cancel a Missions.',
     technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Redux', 'Jest', 'Bootstraps', 'Reactbootsrap'],
-    urlMobile: '/images/travlers.PNG',
-    urlDesktop: '/images/travlers.PNG',
-    urlModal: '/images/travlers.PNG',
+    urlMobile: './images/travlers.PNG',
+    urlDesktop: './images/travlers.PNG',
+    urlModal: './images/travlers.PNG',
     alt: 'space_travlers_hub',
     live: 'https://space-travelers-f5v3.onrender.com/',
     source: 'https://github.com/Iqbal-Elham/Space-Travelers-Hub',
@@ -173,9 +173,9 @@ const worksArray = [
     description:
       'maths-magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: make simple calculations and read a random math-related quote.',
     technologies: ['HTML5', 'CSS3', 'javascript', 'github', 'React', 'Bootstraps'],
-    urlMobile: 'images/math-magicians.PNG',
-    urlDesktop: 'images/math-magicians.PNG',
-    urlModal: '/images/math-magicians.PNG',
+    urlMobile: './images/math-magicians.PNG',
+    urlDesktop: './images/math-magicians.PNG',
+    urlModal: './images/math-magicians.PNG',
     alt: 'work_tonic_daily_personalized_reads',
     live: 'https://mathematic-app.onrender.com/',
     source: 'https://github.com/fithamlak/math-magicians',
@@ -187,9 +187,9 @@ const worksArray = [
     description:
       'MEAL APP is a JavaScript capstone project for building our own web application based on an external API. We choose a meal API which is an API that provides data about different meals that one can like and add comments and then build the webapp around it. The app has 2 interfaces (One for the home page and the other for showing and adding comments).',
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    urlMobile: 'images/meal-app.PNG',
-    urlDesktop: 'images/meal-app.PNG',
-    urlModal: '/images/meal-app.PNG',
+    urlMobile: './images/meal-app.PNG',
+    urlDesktop: './images/meal-app.PNG',
+    urlModal: './images/meal-app.PNG',
     alt: 'work_multi-post_stories_daily_personalized_reads',
     live: 'https://fithamlak.github.io/meal-app/dist/',
     source: 'https://github.com/fithamlak/meal-app',
