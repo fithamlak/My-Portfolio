@@ -108,7 +108,7 @@ fieldset {
   height: 100%;
   width: 100%;
   background: #fff;
-  background-image: url('/images/headline-bg.png');
+  background-image: url('./images/headline-bg-desktop.PNG');
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 0 0 0 90px;
@@ -135,6 +135,7 @@ fieldset {
 }
 
 .text {
+  margin-top: 10px;
   padding: 0;
   width: 100%;
   color: #344563;
