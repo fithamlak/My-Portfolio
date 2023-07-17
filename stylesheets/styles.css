@@ -168,7 +168,7 @@ fieldset {
   #headline-container {
     background-image: url('../images/headline-bg-desktop.png');
     background-size: 100% auto;
-    min-height: 1150px;
+    min-height: 1000px;
     margin: 48px 0 0 0;
     border-top: 48px solid #fff;
     border-right: 8px solid #fff;
