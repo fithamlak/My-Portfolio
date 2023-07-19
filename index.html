@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fithamlak's Portfolio Page</title>
-    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <title>Fithamlak Fikrie lakew</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -23,28 +19,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
-
   <body>
-    <!-- HEADER TOOLBAR SECTION -->
     <header>
-      <nav id="toolbar">
-        <a href="#" id="logo">My Logo</a>
-        <div id="menu-bars-container">
-          <div id="menu-bars">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-          </div>
-          <ul id="menu">
-            <li><a href="#works-container">Portolio</a></li>
-            <li><a href="#about-container">About</a></li>
-            <li><a href="#contact-form-container">Contact</a></li>
-          </ul>
-        </div>
+      <nav id="nav">
+        <span id="nav--left">
+          <a href="#">
+            <i class="fa-brands fa-uncharted"></i>
+          </a>
+        </span>
+        <span id="nav--center">
+          <a class="nav-link visually-hidden-sm" href="#portfolio">Portfolio</a>
+          <a class="nav-link visually-hidden-sm" href="#about">About</a>
+          <a class="nav-link visually-hidden-sm" href="#contact">Contact</a>
+        </span>
+        <span id="nav--right">
+          <span id="toggleDarkMode" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+          <span class="visually-hidden-lg" id="menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </span>
       </nav>
     </header>
-    <!-- MOBILE MENU SECTION -->
     <section>
       <div id="mobile-menu" class="d-none flex-column">
         <header>
@@ -53,26 +53,195 @@
           </div>
         </header>
         <ul id="mobile-links">
-          <li><a href="#works-container">Portfolio</a></li>
-          <li><a href="#about-container">About</a></li>
-          <li><a href="#contact-form-container">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="d-flex justify-content-center p-2">
-          <div id="black-bar"></div>
-        </div>
       </div>
     </section>
-    <!-- HEADLINE SECTION -->
-    <section id="headline-container">
-      <article id="headline">
-        <header>
-          <h1 class="header">
-            <span>I’m Fithamlak Fikrie<br />Glad to see you!</span>
-          </h1>
-        </header>
-        <div>
-          <p class="text">
-             Dedicated and efficient full-stack web developer with 4
+    <main>
+      <section id="particles-js">
+        <div id="hero">
+          <div id="hero--icon-container">
+            <div id="hero--icon-background">
+              <svg
+                id="hero--icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M171.73,232.813A5.381,5.381,0,0,0,176.7,229.5,48.081,48.081,0,0,1,191.6,204.244c1.243-.828,1.657-2.484,1.657-4.141a4.22,4.22,0,0,0-2.071-3.312L74.429,128.473,148.958,85a9.941,9.941,0,0,0,4.968-8.281,9.108,9.108,0,0,0-4.968-8.281L126.6,55.6a9.748,9.748,0,0,0-9.523,0l-100.2,57.966a9.943,9.943,0,0,0-4.969,8.281V236.954a9.109,9.109,0,0,0,4.969,8.281L39.235,258.07a8.829,8.829,0,0,0,4.968,1.242,9.4,9.4,0,0,0,6.625-2.484,10.8,10.8,0,0,0,2.9-7.039V164.5L169.66,232.4A4.5,4.5,0,0,0,171.73,232.813ZM323.272,377.73a12.478,12.478,0,0,0-4.969,1.242l-74.528,43.062V287.882c0-2.9-2.9-5.8-6.211-4.555a53.036,53.036,0,0,1-28.984.414,4.86,4.86,0,0,0-6.21,4.555V421.619l-74.529-43.061a8.83,8.83,0,0,0-4.969-1.242,9.631,9.631,0,0,0-9.523,9.523v26.085a9.107,9.107,0,0,0,4.969,8.281l100.2,57.553A8.829,8.829,0,0,0,223.486,480a11.027,11.027,0,0,0,4.969-1.242l100.2-57.553a9.941,9.941,0,0,0,4.968-8.281V386.839C332.8,382.285,328.24,377.73,323.272,377.73ZM286.007,78a23,23,0,1,0-23-23A23,23,0,0,0,286.007,78Zm63.627-10.086a23,23,0,1,0,23,23A23,23,0,0,0,349.634,67.914ZM412.816,151.6a23,23,0,1,0-23-23A23,23,0,0,0,412.816,151.6Zm-63.182-9.2a23,23,0,1,0,23,23A23,23,0,0,0,349.634,142.4Zm-63.627,83.244a23,23,0,1,0-23-23A23,23,0,0,0,286.007,225.648Zm-62.074,36.358a23,23,0,1,0-23-23A23,23,0,0,0,223.933,262.006Zm188.883-82.358a23,23,0,1,0,23,23A23,23,0,0,0,412.816,179.648Zm0,72.272a23,23,0,1,0,23,23A23,23,0,0,0,412.816,251.92Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div id="hero--text-container">
+            <div id="hero--text">
+              <h1>
+                Hi, I'm Fithamlak Fikrie Lakew, I'm a
+                <span class="text-primary">full-stack software engineer</span>
+                from Ethiopia.
+              </h1>
+              <h2>
+                I love building simple, Optimized, and Secured Systems currently
+                working at cyber security Institiution.
+              </h2>
+              <button
+                type="button"
+                onclick="window.location.href='#portfolio'"
+                class="btn btn--dark btn--lg visually-hidden-sm"
+              >
+                <i class="fa-solid fa-chevron-down"></i>&nbsp;&nbsp;Explore My
+                Work
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="portfolio--header"><h2>Featured Projects</h2></div>
+        <div class="portfolio--container">
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/moneytrack.jpg" alt="moneytrack" />
+            </div>
+            <h2>moneytrack</h2>
+            <div class="portfolio--card-text">
+              <p>
+                A mobile web application built with Ruby on Rails where users can manage their budget; users can list expenses associated with a category and see how much money they've spent and on what
+              </p>
+              <div class="portfolio--stack">
+                <span>Ruby on Rails</span>
+              </div>
+              <div class="portfolio--buttons">
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://expense-tracker-nl4s.onrender.com/', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Demo
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://github.com/fithamlak/Budget-App', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Source
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/stock-app.PNG" alt="Stocks" />
+            </div>
+            <h2>Stocks</h2>
+            <div class="portfolio--card-text">
+              <div>
+                <p>
+                  Stocks is a single page web application (SPA), built with
+                  React, which shows a list of popular companies' stock tickers,
+                  and also shows financial metrics for each ticker on the
+                  details page.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>React</span>
+                <span>Redux</span>
+                <span>Axios</span>
+                <span>Jest</span>
+              </div>
+              <div class="portfolio--buttons">
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://stock-app-anup.onrender.com/', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Demo
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://github.com/fithamlak/stock-app', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Source
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/books-app.png" alt="Bookstore" />
+            </div>
+            <h2>Bookstore</h2>
+            <div class="portfolio--card-text">
+              <p>
+                Bookstore is a single page web application built with React,
+                which allows users to display a list of books, add a book, and
+                remove a selected book.
+              </p>
+              <div class="portfolio--stack">
+                <span>React</span>
+                <span>Redux</span>
+                <span>Axios</span>
+              </div>
+              <div class="portfolio--buttons">
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://books-wvgt.onrender.com', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Demo
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://github.com/fithamlak/bookstore/', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Source
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/meal-app.PNG" alt="Foodie" />
+            </div>
+            <h2>Meal-App</h2>
+            <div class="portfolio--card-text">
+              <p>
+                MEAL APP is a JavaScript capstone project for building our own web application based on an external API. We choose a meal API which is an API that provides data about different meals that one can like and add comments and then build the webapp around it. 
+              </p>
+              <div class="portfolio--stack">
+                <span>JavaScript ES6</span>
+                <span>Using API</span>
+              </div>
+              <div class="portfolio--buttons">
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://meal-app-pr4s.onrender.com/', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Demo
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--dark btn--lg"
+                  onclick="window.open('https://github.com/fithamlak/meal-app', '_blank')"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>&nbsp;Source
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div id="about--container">
+          <h2>About</h2>
+          <p>
+            Dedicated and efficient full-stack web developer with 4
              years of hands-on experience, and passion for emerging
              technologies in full-stack web development and cyber
              security. I have a detailed understanding and experience in
@@ -82,176 +251,125 @@
              a proactive learner, team player, committed, and in love
              with remote pair programming thanks to microverse online
              remote practical web development school.
-
           </p>
-        </div>
-        <div>
-          <h2 id="connect">Let's Connect</h2>
-        </div>
-        <div id="social-icons-container">
-          <ul id="social-icons">
-            <li class="icon">
-              <a
-                href="https://twitter.com/fithamlak-fikrie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://www.linkedin.com/in/fithamlak-fikrie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://github.com/fithamlak"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </section>
-    <!-- WORKS SECTION -->
-    <section id="works-container">
-      <ul id="works"></ul>
-    </section>
-    <!-- WORKS MODAL SECTION -->
-    <section>
-      <div id="work-modal" class="d-none flex-column"></div>
-    </section>
-    <!-- ABOUT SECTION -->
-    <section id="about-container">
-      <article id="about">
-        <div id="description-container">
-          <div id="description">
-            <h2>
-              <span>About<br />Myself</span>
-            </h2>
-            <p class="text">
-              Dedicated and efficient full-stack web developer with 4
-years of hands-on experience, and passion for emerging
-technologies in full-stack web development and cyber
-security. I have a detailed understanding and experience in
-full-stack web development with MongoDB, NodeJS,
-ExpressJS, and React with the latest implementation in
-each stack. Equally valued with my technical skills I am also
-a proactive learner, team player, committed, and in love
-with remote pair programming thanks to microverse online
-remote practical web development school.
+          <button
+            type="button"
+            class="btn btn--dark btn--lg"
+            id="about--container-resume-btn"
+            onclick="window.open('./assets/fithamlak_fikrie_resume.pdf', '_blank')"
+          >
+            View Resume
+          </button>
+          <h2>Let's connect</h2>
+          <div id="about--socials">
+            <a
+              href="https://github.com/fithamlak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github fa-3x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fithamlak-fikrie/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            <a
+              href="https://angel.co/u/fithamlak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-angellist fa-3x"></i>
+            </a>
 
-            </p>
-            <h2 id="connect">Let's Connect</h2>
-            <div id="social-icons-container">
-              <ul id="social-icons">
-                <li class="icon">
-                  <a
-                    href="https://github.com/fithamlak"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://www.linkedin.com/in/fithamlak-fikrie/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://twitter.com/fithamlak-fikrie"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://fithamlak.medium.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="./images/medium.png" alt="medium" />
-                  </a>
-                </li>
-              </ul>
+            <a
+              href="https://twitter.com/Fithamlak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-twitter fa-3x"></i>
+            </a>
+            <a
+              href="https://fithamlak-fikrie.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-medium fa-3x"></i>
+            </a>
+          </div>
+          <div id="about--skills-container">
+            <div class="about--skill">
+              <h3>
+                Front-End Skills&nbsp;<i class="fa-solid fa-chevron-right"></i>
+              </h3>
+              <div class="about--skill-stack">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Redux</span>
+                <span>Tailwind</span>
+                <span>Bootstrap</span>
+              </div>
             </div>
-            <div class="btn-container">
-              <button type="button" class="btn">
-                <a href="#">Get my resume</a>
-              </button>
+            <div class="about--skill">
+              <h3>
+                Back-End Skills&nbsp;<i class="fa-solid fa-chevron-right"></i>
+              </h3>
+              <div class="about--skill-stack">
+                <span>Express.js</span>
+                <span>Ruby</span>
+                <span>Rails</span>
+                <span>PostgreSQL</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+            <div class="about--skill">
+              <h3>
+                Tools & Methods&nbsp;<i class="fa-solid fa-chevron-right"></i>
+              </h3>
+              <div class="about--skill-stack">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>GitLab</span>
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Responsive</span>
+                <span>Rspec</span>
+                <span>TDD</span>
+              </div>
+            </div>
+            <div class="about--skill">
+              <h3>
+                Professional Skills&nbsp;<i
+                  class="fa-solid fa-chevron-right"
+                ></i>
+              </h3>
+              <div class="about--skill-stack">
+                <span>Remote Pair-Programming</span>
+                <span>Teamwork</span>
+                <span>Mentoring</span>
+              </div>
             </div>
           </div>
         </div>
-        <div id="categories-container">
-          <ul id="categories">
-            <li id="categories-item">
-              <span>Languages</span>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li>
-              <ul id="item-details">
-                <li class="detail">
-                  <img src="images/js.jpg" alt="javascript" />
-                  <span>Javascript</span>
-                </li>
-                <li class="detail">
-                  <img src="images/html.jpg" alt="html" />
-                  <span>HTML</span>
-                </li>
-                <li class="detail">
-                  <img src="images/css.jpg" alt="css" />
-                  <span>Css</span>
-                </li>
-              </ul>
-            </li>
-            <li id="categories-item" class="bottom-border">
-              <span>Frameworks</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li id="categories-item" class="bottom-border">
-              <span>Skills</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact-form-container">
-      <article id="contact-form-container-article">
-        <div>
-          <h2 id="contact-form-header">Contact me</h2>
-        </div>
-        <div>
-          <p id="contact-form-text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
+      </section>
+      <section id="contact">
+        <div id="contact--container">
+          <h2>Contact</h2>
+          <p>
+            Ready to collaborate on your next big project or breakthrough idea?
+            I can't wait to hear from you! Let's take your vision and transform
+            it into a digital reality.
           </p>
-        </div>
-        <div>
           <form
-            id="contact-form"
+            id="contact--form"
             method="post"
             action="https://formspree.io/f/mvoyerqw"
           >
-            <fieldset id="contact-form-fieldset">
+            <fieldset id="contact--form-fieldset">
               <p>
                 <label for="name"></label>
                 <input
@@ -269,7 +387,6 @@ remote practical web development school.
                   name="email"
                   id="email"
                   type="email"
-                  class="form-control"
                   placeholder="Enter your email"
                   required
                 />
@@ -279,7 +396,6 @@ remote practical web development school.
                 <textarea
                   name="message"
                   id="message"
-                  class="form-control"
                   placeholder="Write your message here"
                   maxlength="500"
                   required
@@ -289,20 +405,23 @@ remote practical web development school.
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
               >
-                <button id="btn-contact-form" type="submit">
-                  Get in touch
-                </button>
-                <button id="btn-reset" class="mt-5">Reset form</button>
+                <br />
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    id="contact--form-btn"
+                    class="btn btn--dark btn--lg"
+                  >
+                    Get in touch
+                  </button>
+                </div>
               </div>
             </fieldset>
           </form>
         </div>
-      </article>
-    </section>
-    <!-- FOOTER SECTION -->
-    <section id="footer">
-      <div id="black-bar"></div>
-    </section>
-    <script src="./javascript/app.js"></script>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js" async></script>
   </body>
 </html>
