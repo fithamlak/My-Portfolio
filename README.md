@@ -2,11 +2,6 @@
 
 <div align="center">
   <h1><b>Fithamlak Fikries's Portfolio Page</b></h1>
-  <br>
-  <img src="./images/home.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/menu.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/modal.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/contact.png" alt="screenshot" width="40%"  height="80%" />
 </div>
 <br><br>
 # 📗 Table of Contents
