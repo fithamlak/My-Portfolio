@@ -123,7 +123,7 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **CSS Frameworks**
-- **Javascript**
+- **Will make full stack with database**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
